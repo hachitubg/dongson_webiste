@@ -103,7 +103,7 @@
     // Back to top button functionality
     $(window).scroll(function() {
       if ($(this).scrollTop() > 300) {
-        $('#backToTop').fadeIn();
+        $('#backToTop').css('display', 'block').hide().fadeIn();
       } else {
         $('#backToTop').fadeOut();
       }
