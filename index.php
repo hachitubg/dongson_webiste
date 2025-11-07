@@ -1,99 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
-  <title>Đông Sơn Export - Xuất khẩu thuốc thú y &amp; nông sản sạch</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
-
-TemplateMo 591 villa agency
-
-https://templatemo.com/tm-591-villa-agency
-
--->
-  </head>
-
-<body>
-
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
-
-  <div class="sub-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-8">
-          <ul class="info">
-            <li><i class="fa fa-envelope"></i> info@company.com</li>
-            <li><i class="fa fa-map"></i> Sunny Isles Beach, FL 33160</li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <ul class="social-links">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <h1>Dongson</h1>
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                      <li><a href="index.html" class="active">Trang Chủ</a></li>
-                      <li><a href="properties.html">Sản Phẩm</a></li>
-                      <li><a href="property-details.html">Chi Tiết Sản Phẩm</a></li>
-                      <li><a href="contact.html">Liên Hệ</a></li>
-                      <li><a href="#"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a></li>
-                  </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+<?php 
+$page = 'home';
+$page_title = 'Đông Sơn Export - Xuất khẩu thuốc thú y & nông sản sạch';
+include 'includes/header.php'; 
+?>
 
   <div class="main-banner">
     <div class="owl-carousel owl-banner">
@@ -124,7 +33,7 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-lg-4">
           <div class="left-image">
             <img src="assets/images/featured.jpg" alt="">
-            <a href="property-details.html"><img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
+            <a href="property-details.php"><img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
           </div>
         </div>
         <div class="col-lg-5">
@@ -304,7 +213,7 @@ https://templatemo.com/tm-591-villa-agency
                       <h4>Thuốc thú y (Win Pharma)</h4>
                       <p>Hợp tác chiến lược với Win Pharma — cung cấp kháng sinh, vitamin, khoáng và chế phẩm sinh học cho gia súc, gia cầm, đạt tiêu chuẩn xuất khẩu với hồ sơ kỹ thuật đầy đủ.</p>
                       <div class="icon-button">
-                        <a href="property-details.html"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
+                        <a href="property-details.php"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
                       </div>
                     </div>
                   </div>
@@ -329,7 +238,7 @@ https://templatemo.com/tm-591-villa-agency
                       <h4>Cà phê nhân</h4>
                       <p>Robusta và Arabica thu mua từ Đắk Lắk, Lâm Đồng, Gia Lai — hương vị đậm đà, truy xuất nguồn gốc rõ ràng và đáp ứng tiêu chuẩn xuất khẩu.</p>
                       <div class="icon-button">
-                        <a href="property-details.html"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
+                        <a href="property-details.php"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
                       </div>
                     </div>
                   </div>
@@ -354,7 +263,7 @@ https://templatemo.com/tm-591-villa-agency
                       <h4>Gạo Việt Nam</h4>
                       <p>Gạo Việt Nam được sản xuất từ các giống lúa chất lượng cao, đảm bảo tiêu chuẩn xuất khẩu với hương vị thơm ngon, dẻo mềm.</p>
                       <div class="icon-button">
-                        <a href="property-details.html"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
+                        <a href="property-details.php"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
                       </div>
                     </div>
                   </div>
@@ -383,10 +292,10 @@ https://templatemo.com/tm-591-villa-agency
         <!-- Product 1: Cà phê nhân -->
         <div class="col-lg-4 col-md-6">
           <div class="item">
-            <a href="property-details.html"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Cà phê nhân"></a>
+            <a href="property-details.php"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Cà phê nhân"></a>
             <span class="category">Cà phê</span>
             <h6>USD 1.800 / tấn</h6>
-            <h4><a href="property-details.html">Cà phê nhân - Robusta (Tây Nguyên)</a></h4>
+            <h4><a href="property-details.php">Cà phê nhân - Robusta (Tây Nguyên)</a></h4>
             <ul>
               <li>Xuất xứ: <span>Đắk Lắk, Lâm Đồng</span></li>
               <li>Loại: <span>Robusta / Arabica</span></li>
@@ -395,17 +304,17 @@ https://templatemo.com/tm-591-villa-agency
               <li>MOQ: <span>1 tấn</span></li>
             </ul>
             <div class="main-button">
-              <a href="property-details.html">Yêu cầu báo giá</a>
+              <a href="property-details.php">Yêu cầu báo giá</a>
             </div>
           </div>
         </div>
         <!-- Product 2: Hạt điều -->
         <div class="col-lg-4 col-md-6">
           <div class="item">
-            <a href="property-details.html"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Hạt điều"></a>
+            <a href="property-details.php"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Hạt điều"></a>
             <span class="category">Hạt điều</span>
             <h6>USD 2.500 / tấn</h6>
-            <h4><a href="property-details.html">Hạt điều nhân - Loại xuất khẩu</a></h4>
+            <h4><a href="property-details.php">Hạt điều nhân - Loại xuất khẩu</a></h4>
             <ul>
               <li>Tiêu chuẩn: <span>AA / A</span></li>
               <li>Đóng gói: <span>25kg/bao</span></li>
@@ -413,17 +322,17 @@ https://templatemo.com/tm-591-villa-agency
               <li>MOQ: <span>500 kg</span></li>
             </ul>
             <div class="main-button">
-              <a href="property-details.html">Yêu cầu báo giá</a>
+              <a href="property-details.php">Yêu cầu báo giá</a>
             </div>
           </div>
         </div>
         <!-- Product 3: Tiêu -->
         <div class="col-lg-4 col-md-6">
           <div class="item">
-            <a href="property-details.html"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Tiêu"></a>
+            <a href="property-details.php"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Tiêu"></a>
             <span class="category">Tiêu</span>
             <h6>USD 3.200 / tấn</h6>
-            <h4><a href="property-details.html">Hạt tiêu đen / trắng - Sản phẩm xuất khẩu</a></h4>
+            <h4><a href="property-details.php">Hạt tiêu đen / trắng - Sản phẩm xuất khẩu</a></h4>
             <ul>
               <li>Vùng: <span>Phú Quốc, Đắk Lắk</span></li>
               <li>Hạt: <span>Nguyên hạt</span></li>
@@ -431,17 +340,17 @@ https://templatemo.com/tm-591-villa-agency
               <li>MOQ: <span>500 kg</span></li>
             </ul>
             <div class="main-button">
-              <a href="property-details.html">Yêu cầu báo giá</a>
+              <a href="property-details.php">Yêu cầu báo giá</a>
             </div>
           </div>
         </div>
         <!-- Product 4: Gạo -->
         <div class="col-lg-4 col-md-6">
           <div class="item">
-            <a href="property-details.html"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Gạo Việt Nam"></a>
+            <a href="property-details.php"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Gạo Việt Nam"></a>
             <span class="category">Gạo</span>
             <h6>USD 600 / tấn</h6>
-            <h4><a href="property-details.html">Gạo Jasmine / ST25 / OM5451</a></h4>
+            <h4><a href="property-details.php">Gạo Jasmine / ST25 / OM5451</a></h4>
             <ul>
               <li>Tiêu chuẩn: <span>ISO / HACCP / VietGAP</span></li>
               <li>Đóng gói: <span>25kg/bao</span></li>
@@ -449,17 +358,17 @@ https://templatemo.com/tm-591-villa-agency
               <li>MOQ: <span>1 tấn</span></li>
             </ul>
             <div class="main-button">
-              <a href="property-details.html">Yêu cầu báo giá</a>
+              <a href="property-details.php">Yêu cầu báo giá</a>
             </div>
           </div>
         </div>
         <!-- Product 5: Thuốc thú y -->
         <div class="col-lg-4 col-md-6">
           <div class="item">
-            <a href="property-details.html"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Thuốc thú y"></a>
+            <a href="property-details.php"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Thuốc thú y"></a>
             <span class="category">Thuốc thú y</span>
             <h6>Liên hệ để báo giá</h6>
-            <h4><a href="property-details.html">Kháng sinh, vitamin, chế phẩm sinh học (Win Pharma)</a></h4>
+            <h4><a href="property-details.php">Kháng sinh, vitamin, chế phẩm sinh học (Win Pharma)</a></h4>
             <ul>
               <li>Tiêu chuẩn: <span>GMP - WHO</span></li>
               <li>Hồ sơ: <span>COA / MSDS / C/O</span></li>
@@ -467,17 +376,17 @@ https://templatemo.com/tm-591-villa-agency
               <li>MOQ: <span>Liên hệ</span></li>
             </ul>
             <div class="main-button">
-              <a href="property-details.html">Yêu cầu báo giá</a>
+              <a href="property-details.php">Yêu cầu báo giá</a>
             </div>
           </div>
         </div>
         <!-- Product 6: Combo xuất khẩu -->
         <div class="col-lg-4 col-md-6">
           <div class="item">
-            <a href="property-details.html"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Combo xuất khẩu"></a>
+            <a href="property-details.php"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Combo xuất khẩu"></a>
             <span class="category">Combo xuất khẩu</span>
             <h6></h6>
-            <h4><a href="property-details.html">Gói hàng kết hợp: cà phê + hạt điều + tiêu</a></h4>
+            <h4><a href="property-details.php">Gói hàng kết hợp: cà phê + hạt điều + tiêu</a></h4>
             <ul>
               <li>Đóng gói: <span>Container / LCL</span></li>
               <li>Hỗ trợ: <span>Đóng gói &amp; Logistics</span></li>
@@ -485,7 +394,7 @@ https://templatemo.com/tm-591-villa-agency
               <li>MOQ: <span>Theo yêu cầu</span></li>
             </ul>
             <div class="main-button">
-              <a href="property-details.html">Yêu cầu báo giá</a>
+              <a href="property-details.php">Yêu cầu báo giá</a>
             </div>
           </div>
         </div>
@@ -567,25 +476,4 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="col-lg-8">
-        <p>Copyright © 2048 Dong Son - Hachi Tu Ltd. All rights reserved.. 
-        
-        Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/counter.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="assets/js/custom.js"></script>
-
-  </body>
-</html>
+<?php include 'includes/footer.php'; ?>
