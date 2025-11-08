@@ -50,7 +50,7 @@ include 'includes/header.php';
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                <strong>Đông Sơn Export JSC</strong> là doanh nghiệp Việt Nam hoạt động trong lĩnh vực xuất khẩu thuốc thú y và nông sản, tiên phong trong việc mang các sản phẩm xanh — sạch — an toàn của Việt Nam đến với các thị trường quốc tế như Mỹ, Nhật Bản, Hàn Quốc, Trung Quốc và nhiều nước khác. Chúng tôi cam kết chất lượng, truy xuất nguồn gốc và tính bền vững trong từng sản phẩm.
+                  <p><strong>Đông Sơn Export JSC</strong> là doanh nghiệp Việt Nam hoạt động trong lĩnh vực xuất khẩu thuốc thú y và nông sản, tiên phong trong việc mang các sản phẩm xanh — sạch — an toàn của Việt Nam đến với các thị trường quốc tế như Mỹ, Nhật Bản, Hàn Quốc, Trung Quốc và nhiều nước khác. Chúng tôi cam kết chất lượng, truy xuất nguồn gốc và tính bền vững trong từng sản phẩm.</p>
                 </div>
               </div>
             </div>
@@ -62,11 +62,11 @@ include 'includes/header.php';
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Ba trụ cột cốt lõi:
+                  <p>Đông Sơn Export vận hành trên ba trụ cột cốt lõi, cam kết mang đến sản phẩm an toàn, chất lượng và nguồn gốc minh bạch phù hợp tiêu chuẩn xuất khẩu:</p>
                   <ul>
-                    <li><strong>Chuỗi cung ứng chuẩn quốc tế</strong> — Hợp tác cùng nhà máy Win Pharma (GMP-WHO) và vùng nguyên liệu đạt chuẩn xuất khẩu.</li>
-                    <li><strong>Chất lượng &amp; truy xuất minh bạch</strong> — Mọi sản phẩm đều có COA, MSDS, C/O và hồ sơ kỹ thuật.</li>
-                    <li><strong>Tầm nhìn toàn cầu — Bản sắc Việt</strong> — "Đông Sơn" lấy cảm hứng từ trống đồng Đông Sơn, biểu tượng trường tồn và tinh hoa Việt Nam.</li>
+                    <li><p><strong>Chuỗi cung ứng chuẩn quốc tế</strong> — Hợp tác cùng nhà máy Win Pharma (GMP-WHO) và vùng nguyên liệu đạt chuẩn xuất khẩu.</p></li>
+                    <li><p><strong>Chất lượng &amp; truy xuất minh bạch</strong> — Mọi sản phẩm đều có COA, MSDS, C/O và hồ sơ kỹ thuật.</p></li>
+                    <li><p><strong>Tầm nhìn toàn cầu — Bản sắc Việt</strong> — "Đông Sơn" lấy cảm hứng từ trống đồng Đông Sơn, biểu tượng trường tồn và tinh hoa Việt Nam.</p></li>
                   </ul>
                 </div>
               </div>
@@ -79,7 +79,8 @@ include 'includes/header.php';
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <p><strong>Đông Sơn Export</strong> là đối tác tin cậy cho khách hàng muốn đưa sản phẩm thú y và nông sản sạch ra thị trường quốc tế.</p>
+                  <p>Chọn Đông Sơn Export để đảm bảo sản phẩm của bạn đến tay đối tác quốc tế với độ tin cậy, an toàn và chất lượng cao nhất.</p>
                 </div>
               </div>
             </div>

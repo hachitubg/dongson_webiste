@@ -142,7 +142,6 @@ https://templatemo.com/tm-591-villa-agency
                       <li><a href="index.php" class="<?php echo (isset($page) && $page == 'home') ? 'active' : ''; ?>">Trang Chủ</a></li>
                       <li><a href="about.php" class="<?php echo (isset($page) && $page == 'about') ? 'active' : ''; ?>">Giới Thiệu</a></li>
                       <li><a href="properties.php" class="<?php echo (isset($page) && $page == 'properties') ? 'active' : ''; ?>">Sản Phẩm</a></li>
-                      <li><a href="property-details.php" class="<?php echo (isset($page) && $page == 'property-details') ? 'active' : ''; ?>">Chi Tiết Sản Phẩm</a></li>
                       <li><a href="contact.php" class="<?php echo (isset($page) && $page == 'contact') ? 'active' : ''; ?>">Liên Hệ</a></li>
                       <li><a href="#"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a></li>
                   </ul>   

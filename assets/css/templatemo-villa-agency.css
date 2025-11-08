@@ -403,6 +403,7 @@ Header Style
 .header-area .main-nav {
   background: transparent;
   display: flex;
+  justify-content: space-between;
   /* align-items: center; */
 }
 
