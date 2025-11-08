@@ -1,0 +1,23 @@
+# Enable rewrite engine and set base for the project
+RewriteEngine On
+RewriteBase /dongson_webiste/
+
+# Use index.php as the directory index
+DirectoryIndex index.php
+
+# Redirect any direct requests that include ".php" in the URL to the clean URL (301)
+RewriteCond %{THE_REQUEST} \s/([^\s]+)\.php[?\s]
+RewriteRule ^ /%1 [R=301,L]
+
+# If the requested resource doesn't exist as a file or directory
+# but a corresponding .php file exists, serve that .php file internally
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Fallback: if nothing matches, let index.php handle routing (optional)
+# Uncomment the following to send all non-file/non-dir requests to index.php
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^.*$ index.php [L]

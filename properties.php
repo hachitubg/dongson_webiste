@@ -1,5 +1,5 @@
 <?php 
-    $page = 'home';
+    $page = 'properties';
     $page_title = 'Đông Sơn Export - Xuất khẩu thuốc thú y & nông sản sạch';
     include 'includes/header.php'; 
 ?>

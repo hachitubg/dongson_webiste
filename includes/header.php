@@ -1,3 +1,28 @@
+<?php 
+// If $page is not set by the page, infer it from the current script filename
+if (!isset($page)) {
+    $script = basename($_SERVER['SCRIPT_NAME']);
+    switch ($script) {
+        case 'index.php':
+            $page = 'home';
+            break;
+        case 'about.php':
+            $page = 'about';
+            break;
+        case 'properties.php':
+            $page = 'properties';
+            break;
+        case 'property-details.php':
+            $page = 'property-details';
+            break;
+        case 'contact.php':
+            $page = 'contact';
+            break;
+        default:
+            $page = '';
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
