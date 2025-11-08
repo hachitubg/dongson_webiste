@@ -78,7 +78,7 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-lg-8 col-md-8">
           <ul class="info">
             <li><i class="fa fa-envelope"></i> info@dongsonexport.com</li>
-            <li><i class="fa fa-map"></i> Khánh Ninh, Ngọc Châu, Tân Yên, Bắc Giang</li>
+            <li><i class="fa fa-phone"></i> +84 965 032 630</li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-4">
@@ -147,7 +147,7 @@ https://templatemo.com/tm-591-villa-agency
                       <li><a href="#"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a></li>
                   </ul>   
                     <a class='menu-trigger'>
-                        <span>Menu</span>
+                        <span>Menu</span> 
                     </a>
                     <!-- ***** Menu End ***** -->
                 </nav>

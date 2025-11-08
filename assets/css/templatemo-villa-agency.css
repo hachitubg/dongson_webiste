@@ -403,7 +403,7 @@ Header Style
 .header-area .main-nav {
   background: transparent;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .header-area .main-nav .logo {
@@ -428,7 +428,7 @@ Header Style
 }
 
 .header-area .main-nav ul.nav {
-  flex-basis: 100%;
+  flex-basis: auto;
   margin-top: 30px;
   justify-content: right;
   -webkit-transition: all 0.3s ease 0s;
@@ -744,11 +744,12 @@ Language Switcher Style
 .language-switcher {
   position: relative;
   display: inline-block;
-  margin-left: auto;
-  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
   margin-top: 0;
   align-self: center;
   z-index: 1000;
+  order: 999;
 }
 
 .language-switcher .lang-btn {
@@ -861,8 +862,8 @@ Language Switcher Style
 /* Language Switcher - Tablet */
 @media (max-width: 992px) {
   .language-switcher {
-    margin-left: auto;
-    margin-right: 15px;
+    margin-left: 15px;
+    margin-right: 0;
   }
   
   .language-switcher .lang-btn {
@@ -881,6 +882,7 @@ Language Switcher Style
     right: 70px;
     top: 20px;
     margin: 0;
+    order: 0;
   }
   
   .background-header .language-switcher {
