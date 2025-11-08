@@ -201,17 +201,17 @@ include 'includes/header.php';
                         <ul>
                           <li>Chuỗi cung ứng <span>GMP-WHO</span></li>
                           <li>Giấy tờ <span>COA / MSDS / C/O</span></li>
-                          <li>Đóng gói <span>100g / 1kg / 25kg</span></li>
-                          <li>Thị trường <span>Mỹ, Nhật, Hàn</span></li>
+                          <li>Đóng gói <span>1kg / Hộp giấy</span></li>
+                          <li>Thị trường <span>Trang trại, xuất khẩu</span></li>
                         </ul>
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <img src="assets/images/deal-01.jpg" alt="Thuốc thú y - Win Pharma">
+                      <img src="images_winvet/BỘ SẢN PHẨM MỚI/AMOCICOL 200W HỘP GIẤY 1KG WINVET.png" alt="AMOCICOL 200W - Winvet" style="max-width:100%;">
                     </div>
                     <div class="col-lg-3">
-                      <h4>Thuốc thú y (Win Pharma)</h4>
-                      <p>Hợp tác chiến lược với Win Pharma — cung cấp kháng sinh, vitamin, khoáng và chế phẩm sinh học cho gia súc, gia cầm, đạt tiêu chuẩn xuất khẩu với hồ sơ kỹ thuật đầy đủ.</p>
+                      <h4>AMOCICOL 200W</h4>
+                      <p>Kháng sinh dạng bột đóng hộp 1kg, dùng để điều trị và kiểm soát nhiễm khuẩn đường tiêu hóa và hô hấp cho gia súc, gia cầm. Thiết kế đóng gói tiện lợi cho trang trại.</p>
                       <div class="icon-button">
                         <a href="property-details.php"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
                       </div>
@@ -224,19 +224,19 @@ include 'includes/header.php';
                     <div class="col-lg-3">
                       <div class="info-table">
                         <ul>
-                          <li>Nguồn gốc <span>Tây Nguyên</span></li>
-                          <li>Loại <span>Robusta / Arabica</span></li>
-                          <li>Độ ẩm <span>&lt;12.5%</span></li>
-                          <li>Đóng gói <span>60–70kg/bao</span></li>
+                          <li>Loại <span>Kháng sinh phổ rộng</span></li>
+                          <li>Đóng gói <span>1kg</span></li>
+                          <li>Ứng dụng <span>Gia cầm &amp; Gia súc</span></li>
+                          <li>An toàn <span>Tuân thủ hướng dẫn sử dụng</span></li>
                         </ul>
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <img src="assets/images/deal-02.jpg" alt="Cà phê nhân - Tây Nguyên">
+                      <img src="images_winvet/BỘ SẢN PHẨM MỚI/AMOXCOLIS 64 1KG WIN VET.png" alt="AMOXCOLIS 64 - Winvet" style="max-width:100%;">
                     </div>
                     <div class="col-lg-3">
-                      <h4>Cà phê nhân</h4>
-                      <p>Robusta và Arabica thu mua từ Đắk Lắk, Lâm Đồng, Gia Lai — hương vị đậm đà, truy xuất nguồn gốc rõ ràng và đáp ứng tiêu chuẩn xuất khẩu.</p>
+                      <h4>AMOXCOLIS 64</h4>
+                      <p>Kháng sinh phổ rộng dạng bột, hiệu quả trong phòng và điều trị các nhiễm khuẩn thông thường ở đàn. Phù hợp cho trang trại quy mô vừa và nhỏ.</p>
                       <div class="icon-button">
                         <a href="property-details.php"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
                       </div>
@@ -249,19 +249,19 @@ include 'includes/header.php';
                     <div class="col-lg-3">
                       <div class="info-table">
                         <ul>
-                          <li>Nguồn gốc <span>Việt Nam</span></li>
-                          <li>Loại <span>Tám thơm</span></li>
-                          <li>Độ ẩm <span>&lt;12.5%</span></li>
-                          <li>Đóng gói <span>60–70kg/bao</span></li>
+                          <li>Loại <span>Kháng khuẩn / Điều trị</span></li>
+                          <li>Đóng gói <span>1kg</span></li>
+                          <li>Ứng dụng <span>Pha trộn thức ăn / Nước uống</span></li>
+                          <li>Lưu ý <span>Không vượt liều khuyến cáo</span></li>
                         </ul>
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <img src="assets/images/deal-02.jpg" alt="Gạo Việt Nam">
+                      <img src="images_winvet/BỘ SẢN PHẨM MỚI/FLOMAX 1KG WIN VET.png" alt="FLOMAX - Winvet" style="max-width:100%;">
                     </div>
                     <div class="col-lg-3">
-                      <h4>Gạo Việt Nam</h4>
-                      <p>Gạo Việt Nam được sản xuất từ các giống lúa chất lượng cao, đảm bảo tiêu chuẩn xuất khẩu với hương vị thơm ngon, dẻo mềm.</p>
+                      <h4>FLOMAX</h4>
+                      <p>Sản phẩm kháng khuẩn dạng bột, dễ hòa tan và trộn, hỗ trợ xử lý nhiễm khuẩn tại trang trại và duy trì sức khỏe đàn trong điều kiện nuôi thâm canh.</p>
                       <div class="icon-button">
                         <a href="property-details.php"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
                       </div>
@@ -281,123 +281,104 @@ include 'includes/header.php';
   <div class="properties section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 offset-lg-4">
-          <div class="section-heading text-center">
-            <h6>| Sản Phẩm</h6>
-            <h2>Danh mục sản phẩm xuất khẩu của Đông Sơn Export</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Product 1: Cà phê nhân -->
+        <!-- Featured Winvet products: 6 items with short name + short description -->
+        <!-- Add small CSS to clamp description to 2 lines -->
+        <style>
+          .short-desc{
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-height: 3.6em;
+            margin-bottom: 0.75rem;
+          }
+          .item hr{border:0;border-top:1px solid #8f6600;margin:30px 0;}
+        </style>
         <div class="col-lg-4 col-md-6">
           <div class="item">
-            <a href="property-details.php"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Cà phê nhân"></a>
-            <span class="category">Cà phê</span>
-            <h6>USD 1.800 / tấn</h6>
-            <h4><a href="property-details.php">Cà phê nhân - Robusta (Tây Nguyên)</a></h4>
-            <ul>
-              <li>Xuất xứ: <span>Đắk Lắk, Lâm Đồng</span></li>
-              <li>Loại: <span>Robusta / Arabica</span></li>
-              <li>Độ ẩm: <span>&lt;12.5%</span></li>
-              <li>Đóng gói: <span>60–70kg/bao</span></li>
-              <li>MOQ: <span>1 tấn</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="property-details.php">Yêu cầu báo giá</a>
-            </div>
-          </div>
-        </div>
-        <!-- Product 2: Hạt điều -->
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.php"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Hạt điều"></a>
-            <span class="category">Hạt điều</span>
-            <h6>USD 2.500 / tấn</h6>
-            <h4><a href="property-details.php">Hạt điều nhân - Loại xuất khẩu</a></h4>
-            <ul>
-              <li>Tiêu chuẩn: <span>AA / A</span></li>
-              <li>Đóng gói: <span>25kg/bao</span></li>
-              <li>Chứng chỉ: <span>ISO / HACCP</span></li>
-              <li>MOQ: <span>500 kg</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="property-details.php">Yêu cầu báo giá</a>
-            </div>
-          </div>
-        </div>
-        <!-- Product 3: Tiêu -->
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.php"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Tiêu"></a>
-            <span class="category">Tiêu</span>
-            <h6>USD 3.200 / tấn</h6>
-            <h4><a href="property-details.php">Hạt tiêu đen / trắng - Sản phẩm xuất khẩu</a></h4>
-            <ul>
-              <li>Vùng: <span>Phú Quốc, Đắk Lắk</span></li>
-              <li>Hạt: <span>Nguyên hạt</span></li>
-              <li>Đóng gói: <span>25kg/bao</span></li>
-              <li>MOQ: <span>500 kg</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="property-details.php">Yêu cầu báo giá</a>
-            </div>
-          </div>
-        </div>
-        <!-- Product 4: Gạo -->
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.php"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Gạo Việt Nam"></a>
-            <span class="category">Gạo</span>
-            <h6>USD 600 / tấn</h6>
-            <h4><a href="property-details.php">Gạo Jasmine / ST25 / OM5451</a></h4>
-            <ul>
-              <li>Tiêu chuẩn: <span>ISO / HACCP / VietGAP</span></li>
-              <li>Đóng gói: <span>25kg/bao</span></li>
-              <li>Hàm lượng tạp chất: <span>&lt;2%</span></li>
-              <li>MOQ: <span>1 tấn</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="property-details.php">Yêu cầu báo giá</a>
-            </div>
-          </div>
-        </div>
-        <!-- Product 5: Thuốc thú y -->
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.php"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Thuốc thú y"></a>
+            <a href="property-details.php"><img src="images_winvet/BỘ SẢN PHẨM MỚI/OXYVET 50_ 1KG WIN VET.png" alt="OXYVET 50 - Winvet"></a>
             <span class="category">Thuốc thú y</span>
-            <h6>Liên hệ để báo giá</h6>
-            <h4><a href="property-details.php">Kháng sinh, vitamin, chế phẩm sinh học (Win Pharma)</a></h4>
-            <ul>
-              <li>Tiêu chuẩn: <span>GMP - WHO</span></li>
-              <li>Hồ sơ: <span>COA / MSDS / C/O</span></li>
-              <li>Đóng gói: <span>100g / 1kg / 25kg</span></li>
-              <li>MOQ: <span>Liên hệ</span></li>
-            </ul>
+            
+            <h4><a href="property-details.php">OXYVET 50 — 1kg (Winvet)</a></h4>
+            <p class="short-desc">Kháng sinh dạng bột hiệu quả cho điều trị nhiễm khuẩn hô hấp và tiêu hóa ở gia cầm, gia súc.</p>
+            <hr>
             <div class="main-button">
               <a href="property-details.php">Yêu cầu báo giá</a>
             </div>
           </div>
         </div>
-        <!-- Product 6: Combo xuất khẩu -->
+
         <div class="col-lg-4 col-md-6">
           <div class="item">
-            <a href="property-details.php"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23eaeaea'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23666'%20font-family='Noto%20Sans,%20Arial,%20sans-serif'%20font-size='28'%3ENo%20Image%3C/text%3E%3C/svg%3E" alt="Combo xuất khẩu"></a>
-            <span class="category">Combo xuất khẩu</span>
-            <h6></h6>
-            <h4><a href="property-details.php">Gói hàng kết hợp: cà phê + hạt điều + tiêu</a></h4>
-            <ul>
-              <li>Đóng gói: <span>Container / LCL</span></li>
-              <li>Hỗ trợ: <span>Đóng gói &amp; Logistics</span></li>
-              <li>Tài liệu: <span>CO / CI / Packing List</span></li>
-              <li>MOQ: <span>Theo yêu cầu</span></li>
-            </ul>
+            <a href="property-details.php"><img src="images_winvet/BỘ SẢN PHẨM MỚI/PARA MAX 1KG WIN VET.png" alt="PARA MAX - Winvet"></a>
+            <span class="category">Thuốc thú y</span>
+            
+            <h4><a href="property-details.php">PARA MAX — 1kg (Winvet)</a></h4>
+            <p class="short-desc">Chống ký sinh trùng nội hiệu quả, dễ pha trộn vào thức ăn giúp cải thiện sức khỏe đường ruột đàn nuôi.</p>
+            <hr>
             <div class="main-button">
               <a href="property-details.php">Yêu cầu báo giá</a>
             </div>
           </div>
         </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <a href="property-details.php"><img src="images_winvet/BỘ SẢN PHẨM MỚI/SIÊU MEN VIT 5 LÍT WINVET.png" alt="SIÊU MEN VIT - Winvet"></a>
+            <span class="category">Chế phẩm sinh học</span>
+            
+            <h4><a href="property-details.php">SIÊU MEN VIT — 5 Lít (Winvet)</a></h4>
+            <p class="short-desc">Men vi sinh dạng lỏng bổ sung enzyme và vitamin, cải thiện tiêu hóa và tăng đề kháng cho đàn.</p>
+            <hr>
+            <div class="main-button">
+              <a href="property-details.php">Yêu cầu báo giá</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <a href="property-details.php"><img src="images_winvet/BỘ SẢN PHẨM MỚI/SORBITOL 5 LÍT WIN VET.png" alt="SORBITOL - Winvet"></a>
+            <span class="category">Hỗ trợ dinh dưỡng</span>
+            
+            <h4><a href="property-details.php">SORBITOL — 5 Lít (Winvet)</a></h4>
+            <p class="short-desc">Chất điện giải và hỗ trợ bù nước cho vật nuôi, giúp phục hồi nhanh sau stress hoặc tiêu chảy.</p>
+            <hr>
+            <div class="main-button">
+              <a href="property-details.php">Yêu cầu báo giá</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <a href="property-details.php"><img src="images_winvet/BỘ SẢN PHẨM MỚI/SULFATRYL 802 1KG WINVET.png" alt="SULFATRYL 802 - Winvet"></a>
+            <span class="category">Kháng sinh</span>
+            
+            <h4><a href="property-details.php">SULFATRYL 802 — 1kg (Winvet)</a></h4>
+            <p class="short-desc">Kháng sinh sulfa dạng bột, sử dụng rộng rãi trong điều trị và phòng bệnh nhiễm trùng tại trang trại.</p>
+            <hr>
+            <div class="main-button">
+              <a href="property-details.php">Yêu cầu báo giá</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <a href="property-details.php"><img src="images_winvet/BỘ SẢN PHẨM MỚI/TICOSIN ORAL 1 LÍT WIN VET.png" alt="TICOSIN ORAL - Winvet"></a>
+            <span class="category">Thuốc thú y</span>
+            
+            <h4><a href="property-details.php">TICOSIN ORAL — 1 Lít (Winvet)</a></h4>
+            <p class="short-desc">Dung dịch uống kháng sinh chuyên dụng, hiệu quả trong điều trị các nhiễm khuẩn đường hô hấp và tiêu hóa.</p>
+            <hr>
+            <div class="main-button">
+              <a href="property-details.php">Yêu cầu báo giá</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
