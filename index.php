@@ -32,14 +32,14 @@ include 'includes/header.php';
       <div class="row">
         <div class="col-lg-4">
           <div class="left-image">
-            <img src="assets/images/featured.jpg" alt="">
+            <img src="images/banners/banner04.jpg" alt="">
             <a href="property-details.php"><img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
           </div>
         </div>
         <div class="col-lg-5">
           <div class="section-heading">
             <h6>| Về Đông Sơn</h6>
-            <h2>Đông Sơn Export — Xuất khẩu nông sản và dược thú y</h2>
+            <h2>Đông Sơn Export</h2>
           </div>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -129,7 +129,7 @@ include 'includes/header.php';
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
           <div class="video-frame">
-            <img src="assets/images/video-frame.jpg" alt="">
+            <img src="images/banners/banner02.jpg" alt="">
             <a href="https://youtube.com" target="_blank"><i class="fa fa-play"></i></a>
           </div>
         </div>
@@ -151,14 +151,14 @@ include 'includes/header.php';
               </div>
               <div class="col-lg-4">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="12" data-speed="1000"></h2>
-                  <p class="count-text ">Years<br>Experience</p>
+                  <h2 class="timer count-title count-number" data-to="10" data-speed="1000"></h2>
+                  <p class="count-text ">Năm<br>Xuất khẩu</p>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="counter">
                   <h2 class="timer count-title count-number" data-to="24" data-speed="1000"></h2>
-                  <p class="count-text ">Awwards<br>Won 2023</p>
+                  <p class="count-text ">Giải thưởng<br>Từ năm 2013</p>
                 </div>
               </div>
             </div>
@@ -183,35 +183,30 @@ include 'includes/header.php';
               <div class="nav-wrapper ">
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="appartment-tab" data-bs-toggle="tab" data-bs-target="#appartment" type="button" role="tab" aria-controls="appartment" aria-selected="true">Thuốc thú y (Win Pharma)</button>
+                    <button class="nav-link active" id="appartment-tab" data-bs-toggle="tab" data-bs-target="#appartment" type="button" role="tab" aria-controls="appartment" aria-selected="true">Sản phẩm mới</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab" aria-controls="villa" aria-selected="false">Nông sản xuất khẩu</button>
+                    <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab" aria-controls="villa" aria-selected="false">Dinh dưỡng dạng bột</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="penthouse-tab" data-bs-toggle="tab" data-bs-target="#penthouse" type="button" role="tab" aria-controls="penthouse" aria-selected="false">Gạo Việt Nam</button>
+                    <button class="nav-link" id="penthouse-tab" data-bs-toggle="tab" data-bs-target="#penthouse" type="button" role="tab" aria-controls="penthouse" aria-selected="false">Dung dịch tiêm</button>
                   </li>
                 </ul>
               </div>              
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="appartment" role="tabpanel" aria-labelledby="appartment-tab">
                   <div class="row">
-                    <div class="col-lg-3">
-                      <div class="info-table">
-                        <ul>
-                          <li>Chuỗi cung ứng <span>GMP-WHO</span></li>
-                          <li>Giấy tờ <span>COA / MSDS / C/O</span></li>
-                          <li>Đóng gói <span>1kg / Hộp giấy</span></li>
-                          <li>Thị trường <span>Trang trại, xuất khẩu</span></li>
-                        </ul>
-                      </div>
+                    <div class="col-lg-6">
+                      <img src="images_winvet/BỘ SẢN PHẨM MỚI/AMOCICOL 200W HỘP GIẤY 1KG WINVET.png" alt="AMOCICOL 200W - Winvet" style="max-width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                     </div>
                     <div class="col-lg-6">
-                      <img src="images_winvet/BỘ SẢN PHẨM MỚI/AMOCICOL 200W HỘP GIẤY 1KG WINVET.png" alt="AMOCICOL 200W - Winvet" style="max-width:100%;">
-                    </div>
-                    <div class="col-lg-3">
-                      <h4>AMOCICOL 200W</h4>
-                      <p>Kháng sinh dạng bột đóng hộp 1kg, dùng để điều trị và kiểm soát nhiễm khuẩn đường tiêu hóa và hô hấp cho gia súc, gia cầm. Thiết kế đóng gói tiện lợi cho trang trại.</p>
+                      <h4 style="font-size: 28px; font-weight: bold; color: #333; margin-bottom: 15px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">AMOCICOL 200W</h4>
+                      <p style="line-height: 1.6; font-size: 16px; text-indent: 20px; padding-left: 10px;"><strong>AMOCICOL 200W</strong> là kháng sinh dạng bột đóng hộp 1kg, được sản xuất bởi <strong>Win Pharma</strong> theo tiêu chuẩn <strong>GMP-WHO</strong>, chuyên dùng để điều trị và kiểm soát nhiễm khuẩn đường tiêu hóa và hô hấp cho gia súc, gia cầm. Với <strong>thành phần chính là Amoxicillin</strong>, sản phẩm này hiệu quả cao trong việc ngăn ngừa và điều trị các bệnh nhiễm trùng do vi khuẩn nhạy cảm. <strong>Thiết kế đóng gói tiện lợi</strong>, dễ bảo quản và vận chuyển, phù hợp cho trang trại quy mô lớn. Sản phẩm đi kèm đầy đủ giấy tờ <strong>COA, MSDS và C/O</strong>, đảm bảo chất lượng và an toàn cho người sử dụng cũng như vật nuôi. <strong>Đông Sơn Export</strong> cam kết cung cấp sản phẩm với nguồn gốc rõ ràng, hỗ trợ khách hàng trong quá trình xuất khẩu.</p>
+                      <ul style="list-style-type: disc; padding-left: 30px; font-size: 16px; line-height: 1.6;">
+                        <li><strong>Liều lượng khuyến cáo:</strong> 10-20g/100kg trọng lượng cơ thể, pha loãng trong nước uống hoặc thức ăn.</li>
+                        <li><strong>Cách bảo quản:</strong> Để nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp, nhiệt độ dưới 30°C.</li>
+                        <li><strong>Chú ý khi sử dụng:</strong> Không sử dụng cho vật nuôi nhạy cảm với penicillin. Tuân thủ hướng dẫn của bác sĩ thú y. Không dùng cho sản phẩm trứng sữa trong thời gian điều trị.</li>
+                      </ul>
                       <div class="icon-button">
                         <a href="property-details.php"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
                       </div>
@@ -221,22 +216,17 @@ include 'includes/header.php';
                 
                 <div class="tab-pane fade" id="villa" role="tabpanel" aria-labelledby="villa-tab">
                   <div class="row">
-                    <div class="col-lg-3">
-                      <div class="info-table">
-                        <ul>
-                          <li>Loại <span>Kháng sinh phổ rộng</span></li>
-                          <li>Đóng gói <span>1kg</span></li>
-                          <li>Ứng dụng <span>Gia cầm &amp; Gia súc</span></li>
-                          <li>An toàn <span>Tuân thủ hướng dẫn sử dụng</span></li>
-                        </ul>
-                      </div>
+                    <div class="col-lg-6">
+                      <img src="images_winvet/BỘ SẢN PHẨM MỚI/AMOXCOLIS 64 1KG WIN VET.png" alt="AMOXCOLIS 64 - Winvet" style="max-width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                     </div>
                     <div class="col-lg-6">
-                      <img src="images_winvet/BỘ SẢN PHẨM MỚI/AMOXCOLIS 64 1KG WIN VET.png" alt="AMOXCOLIS 64 - Winvet" style="max-width:100%;">
-                    </div>
-                    <div class="col-lg-3">
-                      <h4>AMOXCOLIS 64</h4>
-                      <p>Kháng sinh phổ rộng dạng bột, hiệu quả trong phòng và điều trị các nhiễm khuẩn thông thường ở đàn. Phù hợp cho trang trại quy mô vừa và nhỏ.</p>
+                      <h4 style="font-size: 28px; font-weight: bold; color: #333; margin-bottom: 15px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">AMOXCOLIS 64</h4>
+                      <p style="line-height: 1.6; font-size: 16px; text-indent: 20px; padding-left: 10px;"><strong>AMOXCOLIS 64</strong> là kháng sinh phổ rộng dạng bột đóng gói 1kg, sản xuất bởi <strong>Win Pharma</strong>, hiệu quả trong phòng và điều trị các nhiễm khuẩn thông thường ở đàn gia cầm và gia súc. <strong>Thành phần kết hợp Amoxicillin và Colistin</strong> giúp tăng cường tác dụng chống lại các vi khuẩn gây bệnh đường ruột và hô hấp. Sản phẩm phù hợp cho trang trại quy mô vừa và nhỏ, <strong>dễ pha trộn vào thức ăn hoặc nước uống</strong>. Chúng tôi đảm bảo an toàn khi tuân thủ hướng dẫn sử dụng, với đầy đủ chứng nhận chất lượng quốc tế. <strong>Đông Sơn Export</strong> cung cấp dịch vụ tư vấn và hỗ trợ kỹ thuật để tối ưu hóa hiệu quả sử dụng sản phẩm trong chăn nuôi.</p>
+                      <ul style="list-style-type: disc; padding-left: 30px; font-size: 16px; line-height: 1.6;">
+                        <li><strong>Liều lượng khuyến cáo:</strong> 5-10g/100kg trọng lượng cơ thể, dùng liên tục 3-5 ngày.</li>
+                        <li><strong>Cách bảo quản:</strong> Bảo quản ở nhiệt độ phòng, tránh ẩm ướt và ánh sáng mạnh.</li>
+                        <li><strong>Chú ý khi sử dụng:</strong> Không dùng cho vật nuôi mang thai hoặc đang cho sữa. Theo dõi dấu hiệu phản ứng phụ như tiêu chảy.</li>
+                      </ul>
                       <div class="icon-button">
                         <a href="property-details.php"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
                       </div>
@@ -246,22 +236,17 @@ include 'includes/header.php';
 
                 <div class="tab-pane fade" id="penthouse" role="tabpanel" aria-labelledby="penthouse-tab">
                   <div class="row">
-                    <div class="col-lg-3">
-                      <div class="info-table">
-                        <ul>
-                          <li>Loại <span>Kháng khuẩn / Điều trị</span></li>
-                          <li>Đóng gói <span>1kg</span></li>
-                          <li>Ứng dụng <span>Pha trộn thức ăn / Nước uống</span></li>
-                          <li>Lưu ý <span>Không vượt liều khuyến cáo</span></li>
-                        </ul>
-                      </div>
+                    <div class="col-lg-6">
+                      <img src="images_winvet/BỘ SẢN PHẨM MỚI/FLOMAX 1KG WIN VET.png" alt="FLOMAX - Winvet" style="max-width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                     </div>
                     <div class="col-lg-6">
-                      <img src="images_winvet/BỘ SẢN PHẨM MỚI/FLOMAX 1KG WIN VET.png" alt="FLOMAX - Winvet" style="max-width:100%;">
-                    </div>
-                    <div class="col-lg-3">
-                      <h4>FLOMAX</h4>
-                      <p>Sản phẩm kháng khuẩn dạng bột, dễ hòa tan và trộn, hỗ trợ xử lý nhiễm khuẩn tại trang trại và duy trì sức khỏe đàn trong điều kiện nuôi thâm canh.</p>
+                      <h4 style="font-size: 28px; font-weight: bold; color: #333; margin-bottom: 15px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">FLOMAX</h4>
+                      <p style="line-height: 1.6; font-size: 16px; text-indent: 20px; padding-left: 10px;"><strong>FLOMAX</strong> là sản phẩm kháng khuẩn dạng bột 1kg từ <strong>Win Pharma</strong>, dễ hòa tan và trộn vào thức ăn hoặc nước uống, hỗ trợ xử lý nhiễm khuẩn tại trang trại và duy trì sức khỏe đàn trong điều kiện nuôi thâm canh. Với <strong>hoạt chất Florfenicol</strong>, sản phẩm này đặc biệt hiệu quả chống lại các bệnh nhiễm trùng do vi khuẩn như <strong>E. coli và Salmonella</strong>. Không vượt liều khuyến cáo để đảm bảo an toàn cho vật nuôi và môi trường. <strong>Đông Sơn Export</strong> cung cấp FLOMAX với nguồn gốc truy xuất minh bạch, kèm theo hướng dẫn sử dụng chi tiết và hỗ trợ sau bán hàng để khách hàng yên tâm sử dụng.</p>
+                      <ul style="list-style-type: disc; padding-left: 30px; font-size: 16px; line-height: 1.6;">
+                        <li><strong>Liều lượng khuyến cáo:</strong> 10-20mg/kg trọng lượng cơ thể, dùng 3-5 ngày liên tục.</li>
+                        <li><strong>Cách bảo quản:</strong> Để ở nơi mát, khô, tránh tiếp xúc với nhiệt độ cao trên 25°C.</li>
+                        <li><strong>Chú ý khi sử dụng:</strong> Không dùng cho vật nuôi dưới 1 tuần tuổi. Tránh dùng đồng thời với các kháng sinh khác có thể tương tác.</li>
+                      </ul>
                       <div class="icon-button">
                         <a href="property-details.php"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
                       </div>
@@ -280,6 +265,16 @@ include 'includes/header.php';
 
   <div class="properties section">
     <div class="container">
+
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+          <div class="section-heading text-center">
+            <h6>| Sản Phẩm</h6>
+            <h2>Danh mục sản phẩm</h2>
+          </div>
+        </div>
+      </div>
+
       <div class="row">
         <!-- Featured Winvet products: 6 items with short name + short description -->
         <!-- Add small CSS to clamp description to 2 lines -->
@@ -401,7 +396,7 @@ include 'includes/header.php';
       <div class="row">
         <div class="col-lg-7">
           <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth" width="100%" height="500px" frameborder="0" style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5477.546491309108!2d106.07864107714315!3d21.37293004539374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31351532e09eaa4f%3A0xaeddb20687cfd03d!2zS2nDqm4gVGjhu6d5IEtow6FuaCBnacOgbmctIE5n4buNYyBDaMOidQ!5e0!3m2!1svi!2s!4v1762616660688!5m2!1svi!2s" width="100%" height="500px" frameborder="0" style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);" allowfullscreen=""></iframe>
           </div>
           <div class="row">
             <div class="col-lg-6">
@@ -411,7 +406,7 @@ include 'includes/header.php';
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="item email">
+              <div class="item phone">
                 <img src="assets/images/email-icon.png" alt="" style="max-width: 52px;">
                 <h6>info@dongsongexport.vn<br><span>Email liên hệ</span></h6>
               </div>
