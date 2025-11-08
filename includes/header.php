@@ -104,6 +104,39 @@ https://templatemo.com/tm-591-villa-agency
                         <h1>Dongson</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
+                    
+                    <!-- ***** Language Switcher Start ***** -->
+                    <div class="language-switcher">
+                        <button class="lang-btn" id="currentLang">
+                            <img src="images/vietnam.png" alt="Tiếng Việt" class="flag-icon">
+                            <span class="lang-text">VN</span>
+                            <i class="fa fa-chevron-down"></i>
+                        </button>
+                        <div class="lang-dropdown" id="langDropdown">
+                            <a href="#" class="lang-option active" data-lang="vi">
+                                <img src="images/vietnam.png" alt="Tiếng Việt">
+                                <span>Tiếng Việt</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="en">
+                                <img src="images/united-states.png" alt="English">
+                                <span>English</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="jp">
+                                <img src="images/japan.png" alt="日本語">
+                                <span>日本語</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="kr">
+                                <img src="images/south-korea.png" alt="한국어">
+                                <span>한국어</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="th">
+                                <img src="images/thailand.png" alt="ไทย">
+                                <span>ไทย</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- ***** Language Switcher End ***** -->
+                    
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                       <li><a href="index.php" class="<?php echo (isset($page) && $page == 'home') ? 'active' : ''; ?>">Trang Chủ</a></li>

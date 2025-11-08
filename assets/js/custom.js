@@ -9,6 +9,79 @@
 
     });
 
+	// Language Switcher
+	const langConfig = {
+		vi: { flag: 'images/vietnam.png', text: 'VN', name: 'Tiếng Việt' },
+		en: { flag: 'images/united-states.png', text: 'EN', name: 'English' },
+		jp: { flag: 'images/japan.png', text: 'JP', name: '日本語' },
+		kr: { flag: 'images/south-korea.png', text: 'KR', name: '한국어' },
+		th: { flag: 'images/thailand.png', text: 'TH', name: 'ไทย' }
+	};
+
+	// Load saved language or default to Vietnamese
+	let currentLang = localStorage.getItem('selectedLanguage') || 'vi';
+
+	// Initialize language on page load
+	function initLanguage() {
+		updateCurrentLangButton(currentLang);
+		setActiveOption(currentLang);
+	}
+
+	// Update current language button
+	function updateCurrentLangButton(lang) {
+		const config = langConfig[lang];
+		$('#currentLang .flag-icon').attr('src', config.flag).attr('alt', config.name);
+		$('#currentLang .lang-text').text(config.text);
+	}
+
+	// Set active option in dropdown
+	function setActiveOption(lang) {
+		$('.lang-option').removeClass('active');
+		$(`.lang-option[data-lang="${lang}"]`).addClass('active');
+	}
+
+	// Toggle dropdown
+	$('#currentLang').on('click', function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+		const dropdown = $('#langDropdown');
+		const btn = $(this);
+		
+		dropdown.toggleClass('show');
+		btn.toggleClass('active');
+	});
+
+	// Language option click
+	$('.lang-option').on('click', function(e) {
+		e.preventDefault();
+		const selectedLang = $(this).data('lang');
+		
+		// Update language
+		currentLang = selectedLang;
+		localStorage.setItem('selectedLanguage', selectedLang);
+		
+		// Update UI
+		updateCurrentLangButton(selectedLang);
+		setActiveOption(selectedLang);
+		
+		// Close dropdown with animation
+		$('#langDropdown').removeClass('show');
+		$('#currentLang').removeClass('active');
+		
+		// You can add translation logic here
+		// translatePage(selectedLang);
+	});
+
+	// Close dropdown when clicking outside
+	$(document).on('click', function(e) {
+		if (!$(e.target).closest('.language-switcher').length) {
+			$('#langDropdown').removeClass('show');
+			$('#currentLang').removeClass('active');
+		}
+	});
+
+	// Initialize language on page load
+	initLanguage();
 
 	$(window).scroll(function() {
 	  var scroll = $(window).scrollTop();
