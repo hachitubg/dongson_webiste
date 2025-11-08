@@ -1408,6 +1408,30 @@ Properties Style
   text-align: center;
 }
 
+/* Short description: force exactly 3-line visual height, show ... when text longer, keep space when shorter */
+.properties .item .short-desc {
+  font-size: 14px; /* match base p */
+  line-height: 28px; /* match base p line-height */
+  min-height: calc(28px * 3); /* always reserve 3 lines */
+  max-height: calc(28px * 3); /* prevent expansion beyond 3 lines */
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-line-clamp: 3; /* WebKit/Blink */
+  line-clamp: 3; /* standard-ish */
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  text-overflow: ellipsis;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  white-space: normal;
+  word-break: break-word;
+  /* Fallback gradient mask for browsers that don't support -webkit-line-clamp: show a fade at bottom */
+  -webkit-mask-image: linear-gradient(180deg, black 60%, transparent 100%);
+  mask-image: linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+}
 
 /* 
 ---------------------------------------------
