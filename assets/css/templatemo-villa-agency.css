@@ -744,8 +744,10 @@ Language Switcher Style
 .language-switcher {
   position: relative;
   display: inline-block;
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 0;
+  align-self: center;
   z-index: 1000;
 }
 
@@ -859,8 +861,8 @@ Language Switcher Style
 /* Language Switcher - Tablet */
 @media (max-width: 992px) {
   .language-switcher {
-    margin-left: 20px;
-    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 15px;
   }
   
   .language-switcher .lang-btn {
