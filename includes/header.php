@@ -66,13 +66,94 @@ if (!isset($page)) {
                 includedLanguages: 'en,ja,ko,th,vi',
                 autoDisplay: false
             }, 'google_translate_element');
+            
+            // Khôi phục ngôn ngữ đã chọn
+            restoreLanguage();
         }
         
         function changeLanguage(langCode) {
             var select = document.querySelector('.goog-te-combo');
             if (select) {
-                select.value = langCode;
-                select.dispatchEvent(new Event('change'));
+                // Nếu chuyển về tiếng Việt, reload trang để reset Google Translate
+                if (langCode === 'vi') {
+                    localStorage.setItem('selectedLanguage', 'vi');
+                    
+                    // Xóa cookie của Google Translate
+                    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+                    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + window.location.hostname;
+                    
+                    // Reload trang
+                    window.location.reload();
+                } else {
+                    // Chuyển sang ngôn ngữ khác
+                    select.value = langCode;
+                    select.dispatchEvent(new Event('change'));
+                    
+                    // Lưu ngôn ngữ đã chọn
+                    localStorage.setItem('selectedLanguage', langCode);
+                    
+                    // Cập nhật UI
+                    updateLanguageUI(langCode);
+                }
+            }
+        }
+        
+        function updateLanguageUI(langCode) {
+            // Mapping code với thông tin hiển thị
+            const langData = {
+                '': { flag: 'vietnam.png', text: 'VN' },
+                'vi': { flag: 'vietnam.png', text: 'VN' },
+                'en': { flag: 'united-states.png', text: 'EN' },
+                'ja': { flag: 'japan.png', text: 'JP' },
+                'ko': { flag: 'south-korea.png', text: 'KR' },
+                'th': { flag: 'thailand.png', text: 'TH' }
+            };
+            
+            const data = langData[langCode];
+            
+            // Kiểm tra nếu không tìm thấy, dùng mặc định
+            if (!data) {
+                console.warn('Language code not found:', langCode);
+                return;
+            }
+            
+            // Cập nhật button hiện tại
+            const currentLangBtn = document.getElementById('currentLang');
+            if (currentLangBtn) {
+                const flagImg = currentLangBtn.querySelector('.flag-icon');
+                const langText = currentLangBtn.querySelector('.lang-text');
+                
+                if (flagImg) flagImg.src = 'images/' + data.flag;
+                if (langText) langText.textContent = data.text;
+            }
+            
+            // Cập nhật active state
+            document.querySelectorAll('.lang-option').forEach(option => {
+                const optionLang = option.getAttribute('data-lang');
+                if (optionLang === langCode || (langCode === '' && optionLang === 'vi')) {
+                    option.classList.add('active');
+                } else {
+                    option.classList.remove('active');
+                }
+            });
+        }
+        
+        function restoreLanguage() {
+            const savedLang = localStorage.getItem('selectedLanguage');
+            if (savedLang && savedLang !== 'vi') {
+                // Chỉ restore nếu không phải tiếng Việt
+                // Đợi Google Translate load xong
+                setTimeout(function() {
+                    var select = document.querySelector('.goog-te-combo');
+                    if (select) {
+                        select.value = savedLang;
+                        select.dispatchEvent(new Event('change'));
+                        updateLanguageUI(savedLang);
+                    }
+                }, 1000);
+            } else {
+                // Nếu là tiếng Việt, đảm bảo UI đúng
+                updateLanguageUI('vi');
             }
         }
     </script>
@@ -165,7 +246,7 @@ https://templatemo.com/tm-591-villa-agency
                             <i class="fa fa-chevron-down"></i>
                         </button>
                         <div class="lang-dropdown" id="langDropdown">
-                            <a href="#" class="lang-option active" data-lang="" onclick="changeLanguage(''); return false;">
+                            <a href="#" class="lang-option active" data-lang="vi" onclick="changeLanguage('vi'); return false;">
                                 <img src="images/vietnam.png" alt="Tiếng Việt">
                                 <span>Tiếng Việt</span>
                             </a>
