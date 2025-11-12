@@ -22,7 +22,7 @@
         <div class="col-lg-6">
           <div class="section-heading">
             <h6>| Liên Hệ</h6>
-            <h2>Gửi yêu cầu hoặc hồ sơ kỹ thuật, chúng tôi sẽ phản hồi trong 24 giờ</h2>
+            <h2>Hãy gửi thông tin cho chúng tôi, chúng tôi sẽ liên lạc lại để tư vấn cho bạn sớm nhất !</h2>
           </div>
           <p>ĐÔNG SƠN EXPORT., JSC — Xuất khẩu thuốc thú y và nông sản sạch. Chúng tôi hỗ trợ chứng nhận và hồ sơ xuất khẩu cho từng thị trường.</p>
           <div class="row">
@@ -41,30 +41,37 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <form id="contact-form" action="" method="post">
+          <div id="message-container" style="margin-bottom: 20px;"></div>
+          <form id="contact-form" method="post">
             <div class="row">
               <div class="col-lg-12">
                 <fieldset>
                   <label for="name">Họ và tên</label>
-                  <input type="name" name="name" id="name" placeholder="Họ và tên..." autocomplete="on" required>
+                  <input type="text" name="name" id="name" placeholder="Họ và tên..." autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
                   <label for="email">Email</label>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email của bạn..." required="">
+                  <input type="email" name="email" id="email" placeholder="Email của bạn..." required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="phone">Số điện thoại</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Số điện thoại..." autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
                   <label for="subject">Chủ đề</label>
-                  <input type="subject" name="subject" id="subject" placeholder="Chủ đề..." autocomplete="on" >
+                  <input type="text" name="subject" id="subject" placeholder="Chủ đề..." autocomplete="on">
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
                   <label for="message">Nội dung</label>
-                  <textarea name="message" id="message" placeholder="Nội dung yêu cầu / hồ sơ kỹ thuật..."></textarea>
+                  <textarea name="message" id="message" placeholder="Nội dung yêu cầu / hồ sơ kỹ thuật..." required></textarea>
                 </fieldset>
               </div>
               <div class="col-lg-12">
@@ -85,3 +92,5 @@
   </div>
 
 <?php include 'includes/footer.php'; ?>
+
+<script src="assets/js/contact.js"></script>

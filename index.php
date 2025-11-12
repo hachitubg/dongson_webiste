@@ -2,7 +2,34 @@
 $page = 'home';
 $page_title = 'Đông Sơn Export - Xuất khẩu thuốc thú y & nông sản sạch';
 include 'includes/header.php'; 
+include 'includes/db.php';
+
+// Get 6 latest products
+$productStmt = $pdo->prepare('
+  SELECT p.*, pi.image_path, c.name as category_name
+  FROM products p
+  LEFT JOIN product_images pi ON p.id = pi.product_id AND pi.sort_order = 0
+  LEFT JOIN categories c ON p.category_id = c.id
+  ORDER BY p.created_at DESC
+  LIMIT 6
+');
+$productStmt->execute();
+$products = $productStmt->fetchAll();
+
+// Get 6 latest posts/news
+$postStmt = $pdo->prepare('
+  SELECT p.*, c.name as category_name
+  FROM posts p
+  LEFT JOIN categories c ON p.category_id = c.id
+  WHERE p.is_active = 1
+  ORDER BY p.created_at DESC
+  LIMIT 6
+');
+$postStmt->execute();
+$posts = $postStmt->fetchAll();
 ?>
+
+  <link rel="stylesheet" href="assets/css/index.css">
 
   <div class="main-banner">
     <div class="owl-carousel owl-banner">
@@ -169,101 +196,6 @@ include 'includes/header.php';
     </div>
   </div>
 
-  <div class="section best-deal">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="section-heading">
-            <h6>| Sản Phẩm Nổi Bật</h6>
-            <h2>Sản phẩm xuất khẩu chất lượng hàng đầu</h2>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="tabs-content">
-            <div class="row">
-              <div class="nav-wrapper ">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="appartment-tab" data-bs-toggle="tab" data-bs-target="#appartment" type="button" role="tab" aria-controls="appartment" aria-selected="true">Sản phẩm mới</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab" aria-controls="villa" aria-selected="false">Dinh dưỡng dạng bột</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="penthouse-tab" data-bs-toggle="tab" data-bs-target="#penthouse" type="button" role="tab" aria-controls="penthouse" aria-selected="false">Dung dịch tiêm</button>
-                  </li>
-                </ul>
-              </div>              
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="appartment" role="tabpanel" aria-labelledby="appartment-tab">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <img src="images_winvet/BỘ SẢN PHẨM MỚI/AMOCICOL 200W HỘP GIẤY 1KG WINVET.png" alt="AMOCICOL 200W - Winvet" style="max-width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    </div>
-                    <div class="col-lg-6">
-                      <h4 style="font-size: 28px; font-weight: bold; color: #333; margin-bottom: 15px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">AMOCICOL 200W</h4>
-                      <p style="line-height: 1.6; font-size: 16px; text-indent: 20px; padding-left: 10px;"><strong>AMOCICOL 200W</strong> là kháng sinh dạng bột đóng hộp 1kg, được sản xuất bởi <strong>Win Pharma</strong> theo tiêu chuẩn <strong>GMP-WHO</strong>, chuyên dùng để điều trị và kiểm soát nhiễm khuẩn đường tiêu hóa và hô hấp cho gia súc, gia cầm. Với <strong>thành phần chính là Amoxicillin</strong>, sản phẩm này hiệu quả cao trong việc ngăn ngừa và điều trị các bệnh nhiễm trùng do vi khuẩn nhạy cảm. <strong>Thiết kế đóng gói tiện lợi</strong>, dễ bảo quản và vận chuyển, phù hợp cho trang trại quy mô lớn. Sản phẩm đi kèm đầy đủ giấy tờ <strong>COA, MSDS và C/O</strong>, đảm bảo chất lượng và an toàn cho người sử dụng cũng như vật nuôi. <strong>Đông Sơn Export</strong> cam kết cung cấp sản phẩm với nguồn gốc rõ ràng, hỗ trợ khách hàng trong quá trình xuất khẩu.</p>
-                      <ul style="list-style-type: disc; padding-left: 30px; font-size: 16px; line-height: 1.6;">
-                        <li><strong>Liều lượng khuyến cáo:</strong> 10-20g/100kg trọng lượng cơ thể, pha loãng trong nước uống hoặc thức ăn.</li>
-                        <li><strong>Cách bảo quản:</strong> Để nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp, nhiệt độ dưới 30°C.</li>
-                        <li><strong>Chú ý khi sử dụng:</strong> Không sử dụng cho vật nuôi nhạy cảm với penicillin. Tuân thủ hướng dẫn của bác sĩ thú y. Không dùng cho sản phẩm trứng sữa trong thời gian điều trị.</li>
-                      </ul>
-                      <div class="icon-button">
-                        <a href="property-details.php"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="tab-pane fade" id="villa" role="tabpanel" aria-labelledby="villa-tab">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <img src="images_winvet/BỘ SẢN PHẨM MỚI/AMOXCOLIS 64 1KG WIN VET.png" alt="AMOXCOLIS 64 - Winvet" style="max-width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    </div>
-                    <div class="col-lg-6">
-                      <h4 style="font-size: 28px; font-weight: bold; color: #333; margin-bottom: 15px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">AMOXCOLIS 64</h4>
-                      <p style="line-height: 1.6; font-size: 16px; text-indent: 20px; padding-left: 10px;"><strong>AMOXCOLIS 64</strong> là kháng sinh phổ rộng dạng bột đóng gói 1kg, sản xuất bởi <strong>Win Pharma</strong>, hiệu quả trong phòng và điều trị các nhiễm khuẩn thông thường ở đàn gia cầm và gia súc. <strong>Thành phần kết hợp Amoxicillin và Colistin</strong> giúp tăng cường tác dụng chống lại các vi khuẩn gây bệnh đường ruột và hô hấp. Sản phẩm phù hợp cho trang trại quy mô vừa và nhỏ, <strong>dễ pha trộn vào thức ăn hoặc nước uống</strong>. Chúng tôi đảm bảo an toàn khi tuân thủ hướng dẫn sử dụng, với đầy đủ chứng nhận chất lượng quốc tế. <strong>Đông Sơn Export</strong> cung cấp dịch vụ tư vấn và hỗ trợ kỹ thuật để tối ưu hóa hiệu quả sử dụng sản phẩm trong chăn nuôi.</p>
-                      <ul style="list-style-type: disc; padding-left: 30px; font-size: 16px; line-height: 1.6;">
-                        <li><strong>Liều lượng khuyến cáo:</strong> 5-10g/100kg trọng lượng cơ thể, dùng liên tục 3-5 ngày.</li>
-                        <li><strong>Cách bảo quản:</strong> Bảo quản ở nhiệt độ phòng, tránh ẩm ướt và ánh sáng mạnh.</li>
-                        <li><strong>Chú ý khi sử dụng:</strong> Không dùng cho vật nuôi mang thai hoặc đang cho sữa. Theo dõi dấu hiệu phản ứng phụ như tiêu chảy.</li>
-                      </ul>
-                      <div class="icon-button">
-                        <a href="property-details.php"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="tab-pane fade" id="penthouse" role="tabpanel" aria-labelledby="penthouse-tab">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <img src="images_winvet/BỘ SẢN PHẨM MỚI/FLOMAX 1KG WIN VET.png" alt="FLOMAX - Winvet" style="max-width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    </div>
-                    <div class="col-lg-6">
-                      <h4 style="font-size: 28px; font-weight: bold; color: #333; margin-bottom: 15px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">FLOMAX</h4>
-                      <p style="line-height: 1.6; font-size: 16px; text-indent: 20px; padding-left: 10px;"><strong>FLOMAX</strong> là sản phẩm kháng khuẩn dạng bột 1kg từ <strong>Win Pharma</strong>, dễ hòa tan và trộn vào thức ăn hoặc nước uống, hỗ trợ xử lý nhiễm khuẩn tại trang trại và duy trì sức khỏe đàn trong điều kiện nuôi thâm canh. Với <strong>hoạt chất Florfenicol</strong>, sản phẩm này đặc biệt hiệu quả chống lại các bệnh nhiễm trùng do vi khuẩn như <strong>E. coli và Salmonella</strong>. Không vượt liều khuyến cáo để đảm bảo an toàn cho vật nuôi và môi trường. <strong>Đông Sơn Export</strong> cung cấp FLOMAX với nguồn gốc truy xuất minh bạch, kèm theo hướng dẫn sử dụng chi tiết và hỗ trợ sau bán hàng để khách hàng yên tâm sử dụng.</p>
-                      <ul style="list-style-type: disc; padding-left: 30px; font-size: 16px; line-height: 1.6;">
-                        <li><strong>Liều lượng khuyến cáo:</strong> 10-20mg/kg trọng lượng cơ thể, dùng 3-5 ngày liên tục.</li>
-                        <li><strong>Cách bảo quản:</strong> Để ở nơi mát, khô, tránh tiếp xúc với nhiệt độ cao trên 25°C.</li>
-                        <li><strong>Chú ý khi sử dụng:</strong> Không dùng cho vật nuôi dưới 1 tuần tuổi. Tránh dùng đồng thời với các kháng sinh khác có thể tương tác.</li>
-                      </ul>
-                      <div class="icon-button">
-                        <a href="property-details.php"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="properties section">
     <div class="container">
 
@@ -277,8 +209,6 @@ include 'includes/header.php';
       </div>
 
       <div class="row">
-        <!-- Featured Winvet products: 6 items with short name + short description -->
-        <!-- Add small CSS to clamp description to 2 lines -->
         <style>
           .short-desc{
             display: -webkit-box;
@@ -291,90 +221,168 @@ include 'includes/header.php';
           }
           .item hr{border:0;border-top:1px solid #8f6600;margin:30px 0;}
         </style>
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.php"><img src="images_winvet/BỘ SẢN PHẨM MỚI/OXYVET 50_ 1KG WIN VET.png" alt="OXYVET 50 - Winvet"></a>
-            <span class="category">Thuốc thú y</span>
-            
-            <h4><a href="property-details.php">OXYVET 50 — 1kg (Winvet)</a></h4>
-            <p class="short-desc">Kháng sinh dạng bột hiệu quả cho điều trị nhiễm khuẩn hô hấp và tiêu hóa ở gia cầm, gia súc.</p>
-            <hr>
-            <div class="main-button">
-              <a href="property-details.php">Yêu cầu báo giá</a>
+
+        <?php if (count($products) > 0): ?>
+          <?php foreach ($products as $product): ?>
+            <div class="col-lg-4 col-md-6">
+              <div class="item">
+                <a href="property-details.php?slug=<?php echo urlencode($product['slug']); ?>">
+                  <?php if (!empty($product['image_path'])): ?>
+                    <img src="./uploads/products/<?php echo htmlspecialchars($product['image_path']); ?>" alt="<?php echo htmlspecialchars($product['title']); ?>">
+                  <?php else: ?>
+                    <img src="assets/images/no-image.png" alt="No image">
+                  <?php endif; ?>
+                </a>
+                <span class="category"><?php echo !empty($product['category_name']) ? htmlspecialchars($product['category_name']) : 'Sản phẩm'; ?></span>
+                <br>
+                <h4><a href="property-details.php?slug=<?php echo urlencode($product['slug']); ?>"><?php echo htmlspecialchars($product['title']); ?></a></h4>
+                <p class="short-desc"><?php echo htmlspecialchars($product['short_description'] ?? 'Sản phẩm chất lượng cao từ Đông Sơn Export'); ?></p>
+                <hr>
+                <div class="main-button">
+                  <a href="property-details.php?slug=<?php echo urlencode($product['slug']); ?>">Yêu cầu báo giá</a>
+                </div>
+              </div>
             </div>
+          <?php endforeach; ?>
+        <?php else: ?>
+          <div class="col-12">
+            <p class="text-center">Chưa có sản phẩm nào. Vui lòng quay lại sau.</p>
+          </div>
+        <?php endif; ?>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-posts section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+          <div class="section-heading text-center">
+            <h6>| Tin Tức</h6>
+            <h2>Tin tức & Sự kiện</h2>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.php"><img src="images_winvet/BỘ SẢN PHẨM MỚI/PARA MAX 1KG WIN VET.png" alt="PARA MAX - Winvet"></a>
-            <span class="category">Thuốc thú y</span>
-            
-            <h4><a href="property-details.php">PARA MAX — 1kg (Winvet)</a></h4>
-            <p class="short-desc">Chống ký sinh trùng nội hiệu quả, dễ pha trộn vào thức ăn giúp cải thiện sức khỏe đường ruột đàn nuôi.</p>
-            <hr>
-            <div class="main-button">
-              <a href="property-details.php">Yêu cầu báo giá</a>
+      <div class="row">
+        <style>
+          .news-posts .item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.4s;
+            margin-bottom: 30px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+          }
+          .news-posts .item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(209, 165, 58, 0.3);
+          }
+          .news-posts .item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: all 0.5s;
+          }
+          .news-posts .item:hover img {
+            transform: scale(1.1);
+          }
+          .news-posts .item .content {
+            padding: 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+          }
+          .news-posts .item .post-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 13px;
+            color: #888;
+          }
+          .news-posts .item .post-meta i {
+            color: #D1A53A;
+            margin-right: 5px;
+          }
+          .news-posts .item h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            min-height: 56px;
+          }
+          .news-posts .item h4 a {
+            color: #2a2a2a;
+            transition: all 0.3s;
+          }
+          .news-posts .item:hover h4 a {
+            color: #D1A53A;
+          }
+          .news-posts .item .excerpt {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            flex: 1;
+          }
+          .news-posts .item .read-more {
+            display: inline-block;
+            padding: 10px 25px;
+            background: linear-gradient(135deg, #D1A53A 0%, #b8923a 100%);
+            color: white;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-align: center;
+            margin-top: auto;
+          }
+          .news-posts .item .read-more:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(209, 165, 58, 0.4);
+          }
+        </style>
+
+        <?php if (count($posts) > 0): ?>
+          <?php foreach ($posts as $post): ?>
+            <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+              <div class="item">
+                <div class="image-wrapper" style="overflow: hidden;">
+                  <a href="news-detail.php?slug=<?php echo urlencode($post['slug']); ?>">
+                    <?php if (!empty($post['featured_image'])): ?>
+                      <img src="<?php echo htmlspecialchars($post['featured_image']); ?>" alt="<?php echo htmlspecialchars($post['title']); ?>">
+                    <?php else: ?>
+                      <img src="assets/images/default-post.jpg" alt="Default image">
+                    <?php endif; ?>
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="post-meta">
+                    <span><i class="fa fa-calendar"></i> <?php echo date('d/m/Y', strtotime($post['created_at'])); ?></span>
+                    <?php if (!empty($post['category_name'])): ?>
+                      <span><i class="fa fa-folder"></i> <?php echo htmlspecialchars($post['category_name']); ?></span>
+                    <?php endif; ?>
+                  </div>
+                  <h4><a href="news-detail.php?slug=<?php echo urlencode($post['slug']); ?>"><?php echo htmlspecialchars($post['title']); ?></a></h4>
+                  <p class="excerpt"><?php echo htmlspecialchars($post['excerpt'] ?? strip_tags(substr($post['content'] ?? '', 0, 150)) . '...'); ?></p>
+                  <a href="news-detail.php?slug=<?php echo urlencode($post['slug']); ?>" class="read-more">Đọc thêm <i class="fa fa-arrow-right"></i></a>
+                </div>
+              </div>
             </div>
+          <?php endforeach; ?>
+        <?php else: ?>
+          <div class="col-12">
+            <p class="text-center">Chưa có tin tức nào. Vui lòng quay lại sau.</p>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.php"><img src="images_winvet/BỘ SẢN PHẨM MỚI/SIÊU MEN VIT 5 LÍT WINVET.png" alt="SIÊU MEN VIT - Winvet"></a>
-            <span class="category">Chế phẩm sinh học</span>
-            
-            <h4><a href="property-details.php">SIÊU MEN VIT — 5 Lít (Winvet)</a></h4>
-            <p class="short-desc">Men vi sinh dạng lỏng bổ sung enzyme và vitamin, cải thiện tiêu hóa và tăng đề kháng cho đàn.</p>
-            <hr>
-            <div class="main-button">
-              <a href="property-details.php">Yêu cầu báo giá</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.php"><img src="images_winvet/BỘ SẢN PHẨM MỚI/SORBITOL 5 LÍT WIN VET.png" alt="SORBITOL - Winvet"></a>
-            <span class="category">Hỗ trợ dinh dưỡng</span>
-            
-            <h4><a href="property-details.php">SORBITOL — 5 Lít (Winvet)</a></h4>
-            <p class="short-desc">Chất điện giải và hỗ trợ bù nước cho vật nuôi, giúp phục hồi nhanh sau stress hoặc tiêu chảy.</p>
-            <hr>
-            <div class="main-button">
-              <a href="property-details.php">Yêu cầu báo giá</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.php"><img src="images_winvet/BỘ SẢN PHẨM MỚI/SULFATRYL 802 1KG WINVET.png" alt="SULFATRYL 802 - Winvet"></a>
-            <span class="category">Kháng sinh</span>
-            
-            <h4><a href="property-details.php">SULFATRYL 802 — 1kg (Winvet)</a></h4>
-            <p class="short-desc">Kháng sinh sulfa dạng bột, sử dụng rộng rãi trong điều trị và phòng bệnh nhiễm trùng tại trang trại.</p>
-            <hr>
-            <div class="main-button">
-              <a href="property-details.php">Yêu cầu báo giá</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.php"><img src="images_winvet/BỘ SẢN PHẨM MỚI/TICOSIN ORAL 1 LÍT WIN VET.png" alt="TICOSIN ORAL - Winvet"></a>
-            <span class="category">Thuốc thú y</span>
-            
-            <h4><a href="property-details.php">TICOSIN ORAL — 1 Lít (Winvet)</a></h4>
-            <p class="short-desc">Dung dịch uống kháng sinh chuyên dụng, hiệu quả trong điều trị các nhiễm khuẩn đường hô hấp và tiêu hóa.</p>
-            <hr>
-            <div class="main-button">
-              <a href="property-details.php">Yêu cầu báo giá</a>
-            </div>
-          </div>
-        </div>
-
+        <?php endif; ?>
       </div>
     </div>
   </div>
@@ -415,30 +423,37 @@ include 'includes/header.php';
           </div>
         </div>
         <div class="col-lg-5">
-          <form id="contact-form" action="" method="post">
+          <div id="message-container" style="margin-bottom: 20px;"></div>
+          <form id="contact-form" method="post">
             <div class="row">
               <div class="col-lg-12">
                 <fieldset>
                   <label for="name">Họ và tên</label>
-                  <input type="name" name="name" id="name" placeholder="Họ và tên..." autocomplete="on" required>
+                  <input type="text" name="name" id="name" placeholder="Họ và tên..." autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
                   <label for="email">Email</label>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email của bạn..." required="">
+                  <input type="email" name="email" id="email" placeholder="Email của bạn..." required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="phone">Số điện thoại</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Số điện thoại..." autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
                   <label for="subject">Chủ đề</label>
-                  <input type="subject" name="subject" id="subject" placeholder="Chủ đề..." autocomplete="on" >
+                  <input type="text" name="subject" id="subject" placeholder="Chủ đề..." autocomplete="on">
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
                   <label for="message">Nội dung</label>
-                  <textarea name="message" id="message" placeholder="Nội dung yêu cầu..."></textarea>
+                  <textarea name="message" id="message" placeholder="Nội dung yêu cầu..." required></textarea>
                 </fieldset>
               </div>
               <div class="col-lg-12">
@@ -454,3 +469,5 @@ include 'includes/header.php';
   </div>
 
 <?php include 'includes/footer.php'; ?>
+
+<script src="assets/js/contact.js"></script>

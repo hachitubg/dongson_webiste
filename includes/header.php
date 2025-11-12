@@ -30,10 +30,19 @@ if (!isset($page)) {
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Đông Sơn Export - Xuất khẩu thuốc thú y và nông sản sạch chất lượng cao">
+    <meta name="keywords" content="xuất khẩu, thuốc thú y, nông sản sạch, Đông Sơn Export">
+    <meta name="author" content="Đông Sơn Export">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
   <title><?php echo isset($page_title) ? $page_title : 'Đông Sơn Export'; ?></title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./admin/images/logo.png">
+    <link rel="alternate icon" type="image/png" href="./admin/images/logo.png">
+    <link rel="apple-touch-icon" href="./admin/images/logo.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#D4AF37">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -100,7 +109,8 @@ https://templatemo.com/tm-591-villa-agency
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.php" class="logo">
+                    <a href="index.php" class="logo" style="margin-bottom: 25px !important;">
+                        <img src="./admin/images/logo.png" alt="Đông Sơn Logo" class="logo-icon">
                         <h1>Dongson</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
@@ -142,6 +152,7 @@ https://templatemo.com/tm-591-villa-agency
                       <li><a href="index.php" class="<?php echo (isset($page) && $page == 'home') ? 'active' : ''; ?>">Trang Chủ</a></li>
                       <li><a href="about.php" class="<?php echo (isset($page) && $page == 'about') ? 'active' : ''; ?>">Giới Thiệu</a></li>
                       <li><a href="properties.php" class="<?php echo (isset($page) && $page == 'properties') ? 'active' : ''; ?>">Sản Phẩm</a></li>
+                      <li><a href="news.php" class="<?php echo (isset($page) && ($page == 'news' || $page == 'news-detail')) ? 'active' : ''; ?>">Tin Tức</a></li>
                       <li><a href="contact.php" class="<?php echo (isset($page) && $page == 'contact') ? 'active' : ''; ?>">Liên Hệ</a></li>
                       <li><a href="#"><i class="fa fa-calendar"></i> Yêu cầu báo giá</a></li>
                   </ul>   

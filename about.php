@@ -295,7 +295,7 @@
             </div>
             
             <div class="organization-chart">
-                <img src="https://via.placeholder.com/1200x600/f8f5f0/1a1a1a?text=S%C6%A1+%C4%90%E1%BB%93+T%E1%BB%95+Ch%E1%BB%A9c+C%C3%B4ng+Ty" alt="Sơ đồ tổ chức Công ty Cổ phần Tập đoàn Đông Sơn Export" class="img-fluid">
+                <img src="./images/about/organization-chart.png" alt="Sơ đồ tổ chức Công ty Cổ phần Tập đoàn Đông Sơn Export" class="img-fluid">
                 <p class="chart-caption">Sơ đồ tổ chức Công ty Cổ phần Tập đoàn Đông Sơn Export</p>
             </div>
         </div>
@@ -369,13 +369,13 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4">
                     <div class="lab-image">
-                        <img src="https://via.placeholder.com/600x400/1a1a1a/D1A53A?text=Ph%C3%B2ng+Th%C3%AD+Nghi%E1%BB%87m+Hi%E1%BB%87n+%C4%90%E1%BA%A1i" alt="Phòng thí nghiệm" class="img-fluid">
+                        <img src="./images/about/laboratory.png" alt="Phòng thí nghiệm" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6 mb-4">
                     <div class="section-title" style="text-align: left; margin-bottom: 30px;">
                         <h6>| Cơ Sở Hiện Đại</h6>
-                        <h2>HỆ THỐNG PHÒNG THÍ NGHIỆM HIỆN ĐẠI</h2>
+                        <h2 style="color:white;">HỆ THỐNG PHÒNG THÍ NGHIỆM HIỆN ĐẠI</h2>
                     </div>
                     <p class="lab-description">
                         Đội ngũ nhân sự phòng nghiên cứu và phát triển sản phẩm được trang bị đầy đủ các thiết bị hiện đại và kiến thức khoa học chuyên ngành được nâng cao đào tạo thường xuyên.
@@ -408,7 +408,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 order-lg-2">
                     <div class="rnd-image">
-                        <img src="https://via.placeholder.com/600x400/2d2d2d/D1A53A?text=Nghi%C3%AAn+C%E1%BB%A9u+Ph%C3%A1t+Tri%E1%BB%83n" alt="Nghiên cứu phát triển" class="img-fluid">
+                        <img src="./images/about/research-development.jpg" alt="Nghiên cứu phát triển" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6 mb-4 order-lg-1">
@@ -491,13 +491,13 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-4">
                         <div class="commitment-image">
-                            <img src="https://via.placeholder.com/600x500/D1A53A/1a1a1a?text=Cam+K%E1%BA%BFt+Ch%E1%BA%A5t+L%C6%B0%E1%BB%A3ng" alt="Cam kết chất lượng" class="img-fluid">
+                            <img src="./images/about/commitment-quality.png" alt="Cam kết chất lượng" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-6 mb-4">
                         <div class="section-title" style="text-align: left; margin-bottom: 30px;">
                             <h6>| Cam Kết Của Chúng Tôi</h6>
-                            <h2>ĐỊNH HƯỚNG PHÁT TRIỂN</h2>
+                            <h2 style="color:white;">ĐỊNH HƯỚNG PHÁT TRIỂN</h2>
                         </div>
                         <ul class="commitment-list">
                             <li>

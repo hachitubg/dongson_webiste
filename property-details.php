@@ -1,7 +1,70 @@
 <?php 
-    $page = 'property-details';
-    $page_title = 'Đông Sơn Export - Chi tiết sản phẩm';
-    include 'includes/header.php'; 
+$page = 'property-details';
+$page_title = 'Đông Sơn Export - Chi tiết sản phẩm';
+include 'includes/header.php'; 
+include 'includes/db.php';
+
+// Get product slug from URL
+$slug = isset($_GET['slug']) ? $_GET['slug'] : '';
+
+if (empty($slug)) {
+  header('Location: properties.php');
+  exit;
+}
+
+// Get product details
+$productStmt = $pdo->prepare('
+  SELECT p.*, c.name as category_name, c.id as category_id, c.slug as category_slug
+  FROM products p
+  LEFT JOIN categories c ON p.category_id = c.id
+  WHERE p.slug = ?
+  LIMIT 1
+');
+$productStmt->execute([$slug]);
+$product = $productStmt->fetch();
+
+if (!$product) {
+  header('Location: properties.php');
+  exit;
+}
+
+// Get all product images
+$imagesStmt = $pdo->prepare('
+  SELECT image_path, sort_order
+  FROM product_images
+  WHERE product_id = ?
+  ORDER BY sort_order ASC
+');
+$imagesStmt->execute([$product['id']]);
+$productImages = $imagesStmt->fetchAll();
+
+// Get related products (same category, exclude current product)
+$relatedStmt = $pdo->prepare('
+  SELECT p.*, pi.image_path, c.name as category_name
+  FROM products p
+  LEFT JOIN product_images pi ON p.id = pi.product_id AND pi.sort_order = 0
+  LEFT JOIN categories c ON p.category_id = c.id
+  WHERE p.category_id = ? AND p.id != ?
+  ORDER BY RAND()
+  LIMIT 4
+');
+$relatedStmt->execute([$product['category_id'], $product['id']]);
+$relatedProducts = $relatedStmt->fetchAll();
+
+// Get other products (different categories)
+$otherStmt = $pdo->prepare('
+  SELECT p.*, pi.image_path, c.name as category_name
+  FROM products p
+  LEFT JOIN product_images pi ON p.id = pi.product_id AND pi.sort_order = 0
+  LEFT JOIN categories c ON p.category_id = c.id
+  WHERE p.category_id != ? AND p.id != ?
+  ORDER BY RAND()
+  LIMIT 4
+');
+$otherStmt->execute([$product['category_id'], $product['id']]);
+$otherProducts = $otherStmt->fetchAll();
+
+$page_title = htmlspecialchars($product['title']) . ' - Đông Sơn Export';
 ?>
 
 <!-- Import product details CSS instead of inline styles -->
@@ -11,8 +74,15 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <span class="breadcrumb"><a href="index.php">Trang Chủ</a> / <a href="properties.php">Sản Phẩm</a> / Chi Tiết Sản Phẩm</span>
-          <h3>Chi Tiết Sản Phẩm</h3>
+          <span class="breadcrumb">
+            <a href="index.php">Trang Chủ</a> / 
+            <a href="properties.php">Sản Phẩm</a> 
+            <?php if (!empty($product['category_name'])): ?>
+              / <a href="properties.php?category=<?php echo $product['category_id']; ?>"><?php echo htmlspecialchars($product['category_name']); ?></a>
+            <?php endif; ?>
+            / <?php echo htmlspecialchars($product['title']); ?>
+          </span>
+          <h3><?php echo htmlspecialchars($product['title']); ?></h3>
         </div>
       </div>
     </div>
@@ -25,71 +95,61 @@
         <!-- Left: Product Gallery -->
         <div class="product-gallery-section">
           <div class="product-gallery">
-            <img id="mainImage" class="main-product-image" src="images_winvet/BỘ SẢN PHẨM MỚI/W-AMPICOL HỘP GIẤY 1KG WINVET.png" alt="Sản phẩm chính">
-            
-            <div class="thumbnail-gallery">
-              <div class="thumbnail-item active" onclick="changeImage(this, 'images_winvet/BỘ SẢN PHẨM MỚI/W-AMPICOL HỘP GIẤY 1KG WINVET.png')">
-                <img src="images_winvet/BỘ SẢN PHẨM MỚI/W-AMPICOL HỘP GIẤY 1KG WINVET.png" alt="Ảnh 1">
+            <?php if (count($productImages) > 0): ?>
+              <img id="mainImage" class="main-product-image" 
+                   src="uploads/products/<?php echo htmlspecialchars($productImages[0]['image_path']); ?>" 
+                   alt="<?php echo htmlspecialchars($product['title']); ?>">
+              
+              <?php if (count($productImages) > 1): ?>
+              <div class="thumbnail-gallery">
+                <?php foreach ($productImages as $index => $img): ?>
+                  <div class="thumbnail-item <?php echo $index === 0 ? 'active' : ''; ?>" 
+                       onclick="changeImage(this, 'uploads/products/<?php echo htmlspecialchars($img['image_path']); ?>')">
+                    <img src="uploads/products/<?php echo htmlspecialchars($img['image_path']); ?>" 
+                         alt="<?php echo htmlspecialchars($product['title']); ?> - Ảnh <?php echo $index + 1; ?>">
+                  </div>
+                <?php endforeach; ?>
               </div>
-              <div class="thumbnail-item" onclick="changeImage(this, 'images_winvet/BỘ SẢN PHẨM MỚI/AMOCICOL 200W HỘP GIẤY 1KG WINVET.png')">
-                <img src="images_winvet/BỘ SẢN PHẨM MỚI/AMOCICOL 200W HỘP GIẤY 1KG WINVET.png" alt="Ảnh 2">
-              </div>
-              <div class="thumbnail-item" onclick="changeImage(this, 'images_winvet/BỘ SẢN PHẨM MỚI/W-CANXI NANO 1 LÍT WIN VET.png')">
-                <img src="images_winvet/BỘ SẢN PHẨM MỚI/W-CANXI NANO 1 LÍT WIN VET.png" alt="Ảnh 3">
-              </div>
-              <div class="thumbnail-item" onclick="changeImage(this, 'images_winvet/BỘ SẢN PHẨM MỚI/W-PHAGE 500ml WINVET.png')">
-                <img src="images_winvet/BỘ SẢN PHẨM MỚI/W-PHAGE 500ml WINVET.png" alt="Ảnh 4">
-              </div>
-            </div>
+              <?php endif; ?>
+            <?php else: ?>
+              <img id="mainImage" class="main-product-image" 
+                   src="assets/images/no-image.png" 
+                   alt="No image">
+            <?php endif; ?>
           </div>
         </div>
 
         <!-- Right: Product Content -->
         <div class="product-info-section">
           <div class="product-content">
-            <span class="category">Kháng sinh</span>
-            <h4>W-AMPICOL - Kháng sinh đường uống cho gia súc, gia cầm</h4>
+            <?php if (!empty($product['category_name'])): ?>
+              <span class="category"><?php echo htmlspecialchars($product['category_name']); ?></span>
+            <?php endif; ?>
+            <br>
+            <h4><?php echo htmlspecialchars($product['title']); ?></h4>
+            
+            <!-- <?php if (!empty($product['short_description'])): ?>
+            <div class="product-summary">
+              <p><?php echo nl2br(htmlspecialchars($product['short_description'])); ?></p>
+            </div>
+            <?php endif; ?> -->
+
+            <?php if (!empty($product['price']) && $product['price'] > 0): ?>
+            <div class="product-price">
+              <?php if (!empty($product['promo_price']) && $product['promo_price'] > 0): ?>
+                <span class="old-price"><?php echo number_format($product['price'], 0, ',', '.'); ?> VNĐ</span>
+                <span class="current-price"><?php echo number_format($product['promo_price'], 0, ',', '.'); ?> VNĐ</span>
+                <span class="discount-badge">
+                  -<?php echo round((($product['price'] - $product['promo_price']) / $product['price']) * 100); ?>%
+                </span>
+              <?php else: ?>
+                <span class="current-price"><?php echo number_format($product['price'], 0, ',', '.'); ?> VNĐ</span>
+              <?php endif; ?>
+            </div>
+            <?php endif; ?>
             
             <div class="product-description">
-              <h5>Thành phần:</h5>
-              <ul>
-                <li>Ampicillin (dưới dạng Ampicillin trihydrate): 200g</li>
-                <li>Colistin (dưới dạng Colistin sulfate): 1.200.000 UI</li>
-                <li>Tá dược vừa đủ: 1kg</li>
-              </ul>
-
-              <h5>Công dụng:</h5>
-              <p>Điều trị các bệnh nhiễm khuẩn đường tiêu hóa, đường hô hấp ở gia súc, gia cầm do vi khuẩn nhạy cảm với Ampicillin và Colistin gây ra như:</p>
-              <ul>
-                <li>Bệnh tụ huyết trùng</li>
-                <li>Bệnh phó thương hàn, thương hàn ở lợn, gia cầm</li>
-                <li>Bệnh tiêu chảy vàng, tiêu chảy trắng, kiết lỵ</li>
-                <li>Bệnh nhiễm trùng đường hô hấp</li>
-                <li>Viêm ruột do E.coli, Salmonella</li>
-              </ul>
-
-              <h5>Liều dùng và cách dùng:</h5>
-              <p><strong>Pha vào nước uống:</strong></p>
-              <ul>
-                <li>Gia cầm: 1g/2-3 lít nước uống, dùng liên tục 3-5 ngày</li>
-                <li>Lợn: 1g/1-2 lít nước uống, dùng liên tục 3-5 ngày</li>
-              </ul>
-
-              <h5>Quy cách đóng gói:</h5>
-              <p>Hộp giấy 1kg (10 gói x 100g)</p>
-
-              <h5>Bảo quản:</h5>
-              <p>Nơi khô mát, tránh ánh sáng trực tiếp. Nhiệt độ dưới 30°C</p>
-
-              <h5>Thời gian ngưng thuốc:</h5>
-              <ul>
-                <li>Thịt gia cầm: 7 ngày trước khi giết mổ</li>
-                <li>Thịt lợn: 14 ngày trước khi giết mổ</li>
-              </ul>
-
-              <h5>Xuất xứ:</h5>
-              <p>Sản xuất bởi Win Pharma - Việt Nam<br>
-              Tiêu chuẩn: GMP-WHO</p>
+              <?php echo $product['description']; ?>
             </div>
 
             <!-- Contact Order Button -->
@@ -103,64 +163,48 @@
       </div>
 
       <!-- Related Products Section -->
+      <?php if (count($relatedProducts) > 0): ?>
       <div class="related-products">
         <div class="row">
           <div class="col-lg-12">
             <div class="section-heading">
               <h6>| Sản Phẩm Liên Quan</h6>
-              <h2>Các sản phẩm khác trong danh mục Kháng sinh</h2>
+              <h2>Các sản phẩm khác trong danh mục <?php echo htmlspecialchars($product['category_name']); ?></h2>
             </div>
           </div>
         </div>
 
         <div class="row">
+          <?php foreach ($relatedProducts as $relProd): ?>
           <div class="col-lg-3 col-md-6" style="padding-bottom: 20px;">
             <div class="product-card">
-              <img class="product-card-image" src="images_winvet/BỘ SẢN PHẨM MỚI/AMOCICOL 200W HỘP GIẤY 1KG WINVET.png" alt="AMOCICOL 200W">
+              <a href="property-details.php?slug=<?php echo urlencode($relProd['slug']); ?>">
+                <?php if (!empty($relProd['image_path'])): ?>
+                  <img class="product-card-image" 
+                       src="uploads/products/<?php echo htmlspecialchars($relProd['image_path']); ?>" 
+                       alt="<?php echo htmlspecialchars($relProd['title']); ?>">
+                <?php else: ?>
+                  <img class="product-card-image" src="assets/images/no-image.png" alt="No image">
+                <?php endif; ?>
+              </a>
               <div class="product-card-body">
-                <div class="product-card-category">Kháng sinh</div>
-                <h5 class="product-card-title">AMOCICOL 200W - Kháng sinh hỗn hợp</h5>
-                <a href="property-details.php" class="btn-view-detail">Xem chi tiết</a>
+                <div class="product-card-category"><?php echo htmlspecialchars($relProd['category_name'] ?? 'Sản phẩm'); ?></div>
+                <h5 class="product-card-title">
+                  <a href="property-details.php?slug=<?php echo urlencode($relProd['slug']); ?>">
+                    <?php echo htmlspecialchars($relProd['title']); ?>
+                  </a>
+                </h5>
+                <a href="property-details.php?slug=<?php echo urlencode($relProd['slug']); ?>" class="btn-view-detail">Xem chi tiết</a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6" style="padding-bottom: 20px;">
-            <div class="product-card">
-              <img class="product-card-image" src="images_winvet/BỘ SẢN PHẨM MỚI/W-DOXY PLUS 1KG WIN VET.png" alt="W-DOXY PLUS">
-              <div class="product-card-body">
-                <div class="product-card-category">Kháng sinh</div>
-                <h5 class="product-card-title">W-DOXY PLUS - Kháng sinh Doxycycline</h5>
-                <a href="property-details.php" class="btn-view-detail">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" style="padding-bottom: 20px;">
-            <div class="product-card">
-              <img class="product-card-image" src="images_winvet/BỘ SẢN PHẨM MỚI/OXYVET 50_ 1KG WIN VET.png" alt="OXYVET 50">
-              <div class="product-card-body">
-                <div class="product-card-category">Kháng sinh</div>
-                <h5 class="product-card-title">OXYVET 50 - Kháng sinh Oxytetracycline</h5>
-                <a href="property-details.php" class="btn-view-detail">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" style="padding-bottom: 20px;">
-            <div class="product-card">
-              <img class="product-card-image" src="images_winvet/BỘ SẢN PHẨM MỚI/W-COLIS 1KG WIN VET.png" alt="W-COLIS">
-              <div class="product-card-body">
-                <div class="product-card-category">Kháng sinh</div>
-                <h5 class="product-card-title">W-COLIS - Kháng sinh Colistin</h5>
-                <a href="property-details.php" class="btn-view-detail">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
+          <?php endforeach; ?>
         </div>
       </div>
+      <?php endif; ?>
 
       <!-- Other Products Section -->
+      <?php if (count($otherProducts) > 0): ?>
       <div class="related-products" style="margin-top: 40px;">
         <div class="row">
           <div class="col-lg-12">
@@ -172,59 +216,63 @@
         </div>
 
         <div class="row">
+          <?php foreach ($otherProducts as $otherProd): ?>
           <div class="col-lg-3 col-md-6" style="padding-bottom: 20px;">
             <div class="product-card">
-              <img class="product-card-image" src="images_winvet/BỘ SẢN PHẨM MỚI/W-CANXI NANO 1 LÍT WIN VET.png" alt="W-CANXI NANO">
+              <a href="property-details.php?slug=<?php echo urlencode($otherProd['slug']); ?>">
+                <?php if (!empty($otherProd['image_path'])): ?>
+                  <img class="product-card-image" 
+                       src="uploads/products/<?php echo htmlspecialchars($otherProd['image_path']); ?>" 
+                       alt="<?php echo htmlspecialchars($otherProd['title']); ?>">
+                <?php else: ?>
+                  <img class="product-card-image" src="assets/images/no-image.png" alt="No image">
+                <?php endif; ?>
+              </a>
               <div class="product-card-body">
-                <div class="product-card-category">Dinh dưỡng</div>
-                <h5 class="product-card-title">W-CANXI NANO - Bổ sung canxi</h5>
-                <a href="property-details.php" class="btn-view-detail">Xem chi tiết</a>
+                <div class="product-card-category"><?php echo htmlspecialchars($otherProd['category_name'] ?? 'Sản phẩm'); ?></div>
+                <h5 class="product-card-title">
+                  <a href="property-details.php?slug=<?php echo urlencode($otherProd['slug']); ?>">
+                    <?php echo htmlspecialchars($otherProd['title']); ?>
+                  </a>
+                </h5>
+                <a href="property-details.php?slug=<?php echo urlencode($otherProd['slug']); ?>" class="btn-view-detail">Xem chi tiết</a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6" style="padding-bottom: 20px;">
-            <div class="product-card">
-              <img class="product-card-image" src="images_winvet/BỘ SẢN PHẨM MỚI/SIÊU MEN VIT 5 LÍT WINVET.png" alt="SIÊU MEN VIT">
-              <div class="product-card-body">
-                <div class="product-card-category">Dinh dưỡng</div>
-                <h5 class="product-card-title">SIÊU MEN VIT - Vitamin tổng hợp</h5>
-                <a href="property-details.php" class="btn-view-detail">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" style="padding-bottom: 20px;">
-            <div class="product-card">
-              <img class="product-card-image" src="images_winvet/BỘ SẢN PHẨM MỚI/W-PHAGE 500ml WINVET.png" alt="W-PHAGE">
-              <div class="product-card-body">
-                <div class="product-card-category">Chế phẩm sinh học</div>
-                <h5 class="product-card-title">W-PHAGE - Diệt khuẩn sinh học</h5>
-                <a href="property-details.php" class="btn-view-detail">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" style="padding-bottom: 20px;">
-            <div class="product-card">
-              <img class="product-card-image" src="images_winvet/BỘ SẢN PHẨM MỚI/SORBITOL 5 LÍT WIN VET.png" alt="SORBITOL">
-              <div class="product-card-body">
-                <div class="product-card-category">Dinh dưỡng</div>
-                <h5 class="product-card-title">SORBITOL - Bổ sung năng lượng</h5>
-                <a href="property-details.php" class="btn-view-detail">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
+          <?php endforeach; ?>
         </div>
       </div>
+      <?php endif; ?>
 
     </div>
   </div>
 
 <script>
+  let currentImageIndex = 0;
+  let imagesList = [];
+  
+  // Initialize gallery
+  document.addEventListener('DOMContentLoaded', function() {
+    const thumbnails = document.querySelectorAll('.thumbnail-item img');
+    imagesList = Array.from(thumbnails).map(img => img.src);
+    
+    <?php if (count($productImages) > 1): ?>
+    // Auto slide images every 5 seconds
+    setInterval(function() {
+      nextImage();
+    }, 5000);
+    <?php endif; ?>
+  });
+  
   function changeImage(element, imageSrc) {
-    // Update main image
-    document.getElementById('mainImage').src = imageSrc;
+    // Update main image with fade effect
+    const mainImg = document.getElementById('mainImage');
+    mainImg.style.opacity = '0';
+    
+    setTimeout(() => {
+      mainImg.src = imageSrc;
+      mainImg.style.opacity = '1';
+    }, 300);
     
     // Remove active class from all thumbnails
     const thumbnails = document.querySelectorAll('.thumbnail-item');
@@ -232,7 +280,41 @@
     
     // Add active class to clicked thumbnail
     element.classList.add('active');
+    
+    // Update current index
+    currentImageIndex = Array.from(thumbnails).indexOf(element);
   }
+  
+  function nextImage() {
+    if (imagesList.length <= 1) return;
+    
+    currentImageIndex = (currentImageIndex + 1) % imagesList.length;
+    const thumbnails = document.querySelectorAll('.thumbnail-item');
+    
+    if (thumbnails[currentImageIndex]) {
+      changeImage(thumbnails[currentImageIndex], imagesList[currentImageIndex]);
+    }
+  }
+  
+  function prevImage() {
+    if (imagesList.length <= 1) return;
+    
+    currentImageIndex = (currentImageIndex - 1 + imagesList.length) % imagesList.length;
+    const thumbnails = document.querySelectorAll('.thumbnail-item');
+    
+    if (thumbnails[currentImageIndex]) {
+      changeImage(thumbnails[currentImageIndex], imagesList[currentImageIndex]);
+    }
+  }
+  
+  // Add keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft') {
+      prevImage();
+    } else if (e.key === 'ArrowRight') {
+      nextImage();
+    }
+  });
 </script>
 
 <?php include 'includes/footer.php'; ?>
