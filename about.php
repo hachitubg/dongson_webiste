@@ -9,316 +9,614 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                <span class="breadcrumb"><a href="index.html">Trang Chủ</a>  /  Giới Thiệu</span>
-                <h3>Giới Thiệu Công Ty</h3>
+                    <span class="breadcrumb"><a href="index.php">Trang Chủ</a> / Giới Thiệu</span>
+                    <h3>Giới Thiệu Công Ty</h3>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Company Introduction Section -->
-    <div class="about-intro">
+    <!-- Opening Message Section -->
+    <div class="opening-section">
         <div class="container">
-        
-        <div class="intro-card">
-            <p style="text-align: justify; font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 25px;">
-            Đông Sơn Export là doanh nghiệp tiên phong tại Việt Nam trong lĩnh vực cung cấp sản phẩm – giải pháp phục vụ ngành nông nghiệp và chăn nuôi theo định hướng <strong style="color: #D1A53A;">xanh – bền vững – chuẩn quốc tế</strong>.
-            </p>
-            <p style="text-align: justify; font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 25px;">
-            Chúng tôi chuyên sản xuất và phân phối đa dạng danh mục sản phẩm:
-            </p>
-            
-            <div class="product-list-grid">
-            <div class="product-item">
-                <i class="fas fa-check-circle" style="color: #D1A53A; margin-right: 10px;"></i>
-                <strong>Dinh dưỡng dạng bột</strong>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="opening-card fade-in">
+                        <div class="section-title">
+                            <h6>| Lời Mở Đầu</h6>
+                            <h2>Kính gửi Quý khách hàng</h2>
+                        </div>
+                        
+                        <p class="opening-text">
+                            <strong>Công ty Cổ phần Tập đoàn Đông Sơn Export</strong> xin chân thành cảm ơn quý khách hàng đã đồng hành và ủng hộ chúng tôi trong suốt thời gian qua. Sự tin tưởng và ủng hộ của quý khách là nguồn động viên to lớn, giúp chúng tôi không ngừng nỗ lực và phát triển.
+                        </p>
+                        
+                        <p class="opening-text">
+                            Trước những thách thức của ngành chăn nuôi, đặc biệt là sự gia tăng của các dịch bệnh nguy hiểm, <strong>Đông Sơn Export</strong> cam kết mang đến những sản phẩm thuốc thú y chất lượng cao, dựa trên ba yếu tố cốt lõi: <span class="highlight">"Trí tuệ"</span>, <span class="highlight">"Tâm huyết"</span> và <span class="highlight">"Công nghệ sản xuất hiện đại"</span>. Chúng tôi luôn đặt mục tiêu bảo vệ sức khỏe vật nuôi và tối đa hóa lợi nhuận cho Quý khách hàng.
+                        </p>
+                        
+                        <p class="opening-text">
+                            <strong>Đông Sơn Export</strong> mong muốn tiếp tục hợp tác bền vững với Quý khách, cùng nhau xây dựng một tương lai thịnh vượng.
+                        </p>
+                        
+                        <div class="signature">
+                            <p>Trân trọng,<br><strong>Ban Lãnh Đạo Đông Sơn Export</strong></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="product-item">
-                <i class="fas fa-check-circle" style="color: #D1A53A; margin-right: 10px;"></i>
-                <strong>Dinh dưỡng dạng lỏng</strong>
-            </div>
-            <div class="product-item">
-                <i class="fas fa-check-circle" style="color: #D1A53A; margin-right: 10px;"></i>
-                <strong>Dung dịch sát trùng</strong>
-            </div>
-            <div class="product-item">
-                <i class="fas fa-check-circle" style="color: #D1A53A; margin-right: 10px;"></i>
-                <strong>Dung dịch tiêm</strong>
-            </div>
-            <div class="product-item">
-                <i class="fas fa-check-circle" style="color: #D1A53A; margin-right: 10px;"></i>
-                <strong>Dung dịch uống</strong>
-            </div>
-            <div class="product-item">
-                <i class="fas fa-check-circle" style="color: #D1A53A; margin-right: 10px;"></i>
-                <strong>Hỗn dịch tiêm</strong>
-            </div>
-            <div class="product-item">
-                <i class="fas fa-check-circle" style="color: #D1A53A; margin-right: 10px;"></i>
-                <strong>Hỗn dịch uống</strong>
-            </div>
-            <div class="product-item">
-                <i class="fas fa-check-circle" style="color: #D1A53A; margin-right: 10px;"></i>
-                <strong>Kháng sinh (lon 1kg, túi 1kg, túi 10g)</strong>
-            </div>
-            </div>
-            
-            <p style="text-align: justify; font-size: 16px; line-height: 1.8; color: #555; margin-top: 30px;">
-            Với tư duy hiện đại và cam kết phát triển lâu dài, Đông Sơn Export mong muốn đồng hành cùng người chăn nuôi và đối tác toàn cầu trong việc xây dựng một hệ sinh thái nông nghiệp <strong style="color: #1a1a1a;">bền vững – thân thiện môi trường – đạt chuẩn chất lượng cao</strong>.
-            </p>
-        </div>
         </div>
     </div>
 
     <!-- Vision & Mission Section -->
     <div class="vision-mission-section">
         <div class="container">
-        <div class="section-title white">
-            <h6>| Định Hướng Phát Triển</h6>
-            <h2>TẦM NHÌN & SỨ MỆNH</h2>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-6">
-            <div class="vm-card">
-                <h3>
-                <i class="fas fa-eye"></i>
-                TẦM NHÌN
-                </h3>
-                <p style="font-size: 16px; line-height: 1.8; color: rgba(255,255,255,0.9);">
-                Trở thành một trong những thương hiệu uy tín hàng đầu tại Việt Nam trong lĩnh vực cung cấp sản phẩm – giải pháp cho nông nghiệp sạch, mở rộng mạnh mẽ ra thị trường quốc tế, góp phần nâng tầm giá trị nông sản Việt trên thế giới.
-                </p>
-            </div>
+            <div class="section-title white">
+                <h6>| Định Hướng Phát Triển</h6>
+                <h2>TẦM NHÌN & SỨ MỆNH</h2>
             </div>
             
-            <div class="col-lg-6">
-            <div class="vm-card">
-                <h3>
-                <i class="fas fa-flag"></i>
-                SỨ MỆNH
-                </h3>
-                <ul style="font-size: 15px; line-height: 2; color: rgba(255,255,255,0.9); list-style: none; padding: 0;">
-                <li><i class="fas fa-chevron-right" style="color: #D1A53A; margin-right: 10px;"></i> Cung cấp sản phẩm chất lượng cao, an toàn và hiệu quả</li>
-                <li><i class="fas fa-chevron-right" style="color: #D1A53A; margin-right: 10px;"></i> Hỗ trợ người chăn nuôi tối ưu chi phí – tối đa năng suất</li>
-                <li><i class="fas fa-chevron-right" style="color: #D1A53A; margin-right: 10px;"></i> Góp phần xây dựng chuỗi cung ứng nông nghiệp bền vững</li>
-                <li><i class="fas fa-chevron-right" style="color: #D1A53A; margin-right: 10px;"></i> Kết nối giá trị Việt Nam với thị trường quốc tế</li>
-                </ul>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="vm-card slide-in-left">
+                        <h3><i class="fas fa-eye"></i> TẦM NHÌN</h3>
+                        <p>Công ty dẫn đầu về thuốc thú y, thuốc thủy sản. Xây dựng trang trại xanh và thân thiện môi trường.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="vm-card slide-in-up">
+                        <h3><i class="fas fa-bullseye"></i> SỨ MỆNH</h3>
+                        <p>Mang tới giá trị bền vững, lợi ích và tạo niềm tin cho khách hàng.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="vm-card slide-in-right">
+                        <h3><i class="fas fa-gem"></i> GIÁ TRỊ CỐT LÕI</h3>
+                        <p>Có tinh thần <strong>"Trách nhiệm – Hợp tác – Học Hỏi – Khiêm tốn – Được Yêu"</strong></p>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </div>
     </div>
 
-    <!-- Core Values Section -->
-    <div class="values-section">
+    <!-- Success Path Section -->
+    <div class="success-path-section">
         <div class="container">
-        <div class="section-title">
-            <h6>| Giá Trị Cốt Lõi</h6>
-            <h2>5 GIÁ TRỊ HÀNG ĐẦU CỦA CHÚNG TÔI</h2>
+            <div class="section-title">
+                <h6>| Chiến Lược Phát Triển</h6>
+                <h2>CON ĐƯỜNG ĐI ĐẾN THÀNH CÔNG</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="path-item fade-in">
+                        <div class="path-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h4>Tập trung nguồn lực sản xuất, kinh doanh thuốc</h4>
+                    </div>
+                    
+                    <div class="path-item fade-in">
+                        <div class="path-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Phát triển con người chuyên nghiệp và chia sẻ lợi ích</h4>
+                    </div>
+                    
+                    <div class="path-item fade-in">
+                        <div class="path-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h4>Xây dựng hệ thống phân phối vững mạnh hoàn thiện</h4>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="path-item fade-in">
+                        <div class="path-icon">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <h4>Tập trung xuất khẩu sang các nước có nhu cầu</h4>
+                    </div>
+                    
+                    <div class="path-item fade-in">
+                        <div class="path-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Đặt Khách hàng vào trung tâm của mọi chiến lược</h4>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="row" style="--bs-gutter-y: 0.5rem;">
-            <div class="col-lg-4 col-md-6">
-            <div class="value-card">
-                <div class="value-number">01</div>
-                <h4>Chất lượng hàng đầu</h4>
-                <p>Sản phẩm được nghiên cứu – kiểm nghiệm – sản xuất với quy trình kiểm soát nghiêm ngặt, đảm bảo hiệu quả và độ an toàn cao.</p>
-            </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6">
-            <div class="value-card">
-                <div class="value-number">02</div>
-                <h4>Nông nghiệp xanh – bền vững</h4>
-                <p>Mọi hoạt động đều hướng đến mục tiêu giảm tác động môi trường, hỗ trợ chăn nuôi an toàn – sạch – thịnh vượng.</p>
-            </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6">
-            <div class="value-card">
-                <div class="value-number">03</div>
-                <h4>Con người là trọng tâm</h4>
-                <p>Đội ngũ chuyên môn giàu kinh nghiệm, luôn sáng tạo, thấu hiểu thị trường và sát cánh cùng khách hàng.</p>
-            </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6">
-            <div class="value-card">
-                <div class="value-number">04</div>
-                <h4>Công nghệ & đổi mới</h4>
-                <p>Ứng dụng kỹ thuật hiện đại trong sản xuất và nghiên cứu, nhằm nâng cao chất lượng và tính ổn định của sản phẩm.</p>
-            </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6">
-            <div class="value-card">
-                <div class="value-number">05</div>
-                <h4>Minh bạch – đồng hành</h4>
-                <p>Xây dựng mối quan hệ hợp tác lâu dài dựa trên uy tín, minh bạch và lợi ích bền vững cho đối tác, nông hộ, cộng đồng.</p>
-            </div>
+    </div>
+
+    <!-- Company Stats Section -->
+    <div class="company-stats-section">
+        <div class="container">
+            <div class="stats-overlay">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="stat-box">
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h2 class="counter-value" data-target="2016">2016</h2>
+                            <p>Năm thành lập</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="stat-box">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h2><span class="counter-value" data-target="100">100</span>+</h2>
+                            <p>Nhân sự</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="stat-box">
+                            <div class="stat-icon">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                            <h2><span class="counter-value" data-target="10000">10,000</span> m²</h2>
+                            <p>Tổng diện tích</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="stat-box">
+                            <div class="stat-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h2 class="counter-value" data-target="12">12</h2>
+                            <p>Phòng ban - đơn vị</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <!-- History Timeline Section -->
+    <div class="history-section">
+        <div class="container">
+            <div class="section-title">
+                <h6>| Lịch Sử Hình Thành</h6>
+                <h2>QUÁ TRÌNH HOẠT ĐỘNG</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2016</div>
+                        <h3>CÔNG TY CỔ PHẦN THUỐC THÚ Y BẮC VIỆT</h3>
+                        <p>Thành lập công ty & xây dựng nhà máy</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2018</div>
+                        <h3>ĐẠT CHỨNG CHỈ WHO, GMP, GLP, GSP</h3>
+                        <p>Hoàn thiện tiêu chuẩn chất lượng quốc tế</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h3>CHUYỂN ĐỔI THƯƠNG HIỆU</h3>
+                        <p>Công ty cổ phần tập đoàn Đông Sơn Export</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <h3>ĐẠT CHỨNG CHỈ ISO 9001:2015</h3>
+                        <p>Nâng cao chất lượng quản lý và sản xuất</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Product Categories Section -->
     <div class="product-category-section">
         <div class="container">
-        <div class="section-title">
-            <h6>| Danh Mục Sản Phẩm</h6>
-            <h2>CÁC NHÓM SẢN PHẨM CHỦ LỰC</h2>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-6 col-md-12 mb-4">
-            <div class="category-tab-content">
-                <div class="category-info">
-                <h5><i class="fas fa-seedling"></i> Dinh dưỡng – Tăng trưởng</h5>
-                <ul>
-                    <li><strong>Dạng:</strong> Bột / Lỏng</li>
-                    <li><strong>Công dụng:</strong> Tăng trưởng, tăng sức đề kháng</li>
-                    <li><strong>Đóng gói:</strong> 500g / 1kg / 5kg</li>
-                    <li><strong>Tiêu chuẩn:</strong> GMP-WHO</li>
-                </ul>
-                </div>
-                <p style="color: #555; line-height: 1.7;">Bổ sung dinh dưỡng, tăng sức đề kháng, thúc đẩy tăng trưởng tối ưu cho vật nuôi. Sản phẩm dạng bột và dạng lỏng đáp ứng đa dạng nhu cầu chăn nuôi.</p>
-                <a href="contact.html" class="main-button" style="margin-top: 20px; display: inline-block;">Yêu cầu báo giá</a>
-            </div>
+            <div class="section-title white">
+                <h6>| Danh Mục Sản Phẩm</h6>
+                <h2>SẢN PHẨM VÀ DỊCH VỤ</h2>
+                <p style="color: rgba(255,255,255,0.9); margin-top: 20px;">
+                    Nhà máy sản xuất đạt tiêu chuẩn WHO/GMP/GLP/GSP với 8 dây chuyền sản xuất đa dạng các sản phẩm dùng trong chăn nuôi thú y, thủy sản
+                </p>
             </div>
             
-            <div class="col-lg-6 col-md-12 mb-4">
-            <div class="category-tab-content">
-                <div class="category-info">
-                <h5><i class="fas fa-spray-can"></i> Sát trùng – An toàn sinh học</h5>
-                <ul>
-                    <li><strong>Dạng:</strong> Dung dịch</li>
-                    <li><strong>Công dụng:</strong> Sát trùng, khử khuẩn</li>
-                    <li><strong>Đóng gói:</strong> 1L / 5L / 20L</li>
-                    <li><strong>Ứng dụng:</strong> Chuồng trại, thiết bị</li>
-                </ul>
-                </div>
-                <p style="color: #555; line-height: 1.7;">Kiểm soát mầm bệnh – bảo vệ chuồng trại – nâng cao hiệu quả chăn nuôi. Dung dịch sát trùng an toàn, hiệu quả cao, thân thiện môi trường.</p>
-                <a href="contact.html" class="main-button" style="margin-top: 20px; display: inline-block;">Yêu cầu báo giá</a>
-            </div>
-            </div>
-            
-            <div class="col-lg-6 col-md-12 mb-4">
-            <div class="category-tab-content">
-                <div class="category-info">
-                <h5><i class="fas fa-syringe"></i> Chế phẩm tiêm – uống – hỗn dịch</h5>
-                <ul>
-                    <li><strong>Loại:</strong> Tiêm / Uống</li>
-                    <li><strong>Dạng:</strong> Dung dịch / Hỗn dịch</li>
-                    <li><strong>Công dụng:</strong> Phòng & trị bệnh</li>
-                    <li><strong>Đóng gói:</strong> 100ml / 500ml / 1L</li>
-                </ul>
-                </div>
-                <p style="color: #555; line-height: 1.7;">Hỗ trợ phòng & trị bệnh theo phác đồ hiệu quả. Bổ trợ sức khỏe – phục hồi nhanh cho vật nuôi với công thức chuyên biệt.</p>
-                <a href="contact.html" class="main-button" style="margin-top: 20px; display: inline-block;">Yêu cầu báo giá</a>
-            </div>
-            </div>
-            
-            <div class="col-lg-6 col-md-12 mb-4">
-            <div class="category-tab-content">
-                <div class="category-info">
-                <h5><i class="fas fa-pills"></i> Kháng sinh</h5>
-                <ul>
-                    <li><strong>Đóng gói:</strong> Lon 1kg / Túi 1kg / Túi 10g</li>
-                    <li><strong>Quy mô:</strong> Linh hoạt theo nhu cầu</li>
-                    <li><strong>Chứng nhận:</strong> GMP-WHO, ISO</li>
-                    <li><strong>Phù hợp:</strong> Mọi mô hình chăn nuôi</li>
-                </ul>
-                </div>
-                <p style="color: #555; line-height: 1.7;">Đáp ứng đa dạng nhu cầu & quy mô chăn nuôi. Sản phẩm kháng sinh chất lượng cao, đa dạng quy cách đóng gói phù hợp mọi mô hình.</p>
-                <a href="contact.html" class="main-button" style="margin-top: 20px; display: inline-block;">Yêu cầu báo giá</a>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-
-    <!-- Advantages Section -->
-    <div class="advantages-section">
-        <div class="container">
-        <div class="section-title">
-            <h6>| Ưu Thế Cạnh Tranh</h6>
-            <h2>TẠI SAO CHỌN ĐÔNG SƠN EXPORT?</h2>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-6">
-            <div class="advantage-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Sản phẩm chất lượng – an toàn – hiệu quả cao, được kiểm nghiệm nghiêm ngặt</span>
-            </div>
-            <div class="advantage-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Danh mục đa dạng – tối ưu nhiều mục đích sử dụng trong chăn nuôi</span>
-            </div>
-            <div class="advantage-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Hệ thống sản xuất nghiêm ngặt, đáp ứng tiêu chuẩn quốc tế GMP-WHO</span>
-            </div>
-            </div>
-            <div class="col-lg-6">
-            <div class="advantage-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Quy trình phân phối linh hoạt, đảm bảo thời gian giao hàng</span>
-            </div>
-            <div class="advantage-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Hỗ trợ tư vấn kỹ thuật chuyên sâu từ đội ngũ chuyên gia</span>
-            </div>
-            <div class="advantage-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Phù hợp với nhiều mô hình chăn nuôi và yêu cầu xuất khẩu</span>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-
-    <!-- International Direction Section -->
-    <div class="international-section">
-        <div class="container">
-        <div class="section-title white">
-            <h6>| Định Hướng Quốc Tế</h6>
-            <h2>MỞ RỘNG THỊ TRƯỜNG TOÀN CẦU</h2>
-        </div>
-        
-        <div class="international-content">
             <div class="row">
-            <div class="col-lg-6">
-                <h4 style="color: #D1A53A; margin-top: 20px; margin-bottom: 20px;"><i class="fas fa-globe"></i> Thị trường xuất khẩu</h4>
-                <p style="font-size: 16px; line-height: 1.8; color: rgba(255,255,255,0.9);">
-                Đông Sơn Export không ngừng mở rộng hợp tác, quy chuẩn hóa dây chuyền – sản phẩm theo yêu cầu thị trường: <strong style="color: #D1A53A;">EU, Nhật Bản, Hàn Quốc, Trung Đông, Úc…</strong>
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <h4 style="color: #D1A53A; margin-top: 20px; margin-bottom: 20px;"><i class="fas fa-handshake"></i> Đối tác chiến lược</h4>
-                <p style="font-size: 16px; line-height: 1.8; color: rgba(255,255,255,0.9);">
-                Chúng tôi hướng đến trở thành đơn vị cung cấp đáng tin cậy cho các doanh nghiệp trong chuỗi: <strong style="color: #D1A53A;">Nông nghiệp – Chăn nuôi – Xuất khẩu – Logistic</strong>
-                </p>
-            </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h3>Thuốc kháng sinh</h3>
+                        <p>Beta-lactam và non-betalactam</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Lon 1kg</li>
+                            <li><i class="fas fa-check"></i> Túi 1kg</li>
+                            <li><i class="fas fa-check"></i> Túi 10g</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Chế phẩm sinh học</h3>
+                        <p>Sản phẩm xử lý môi trường & sát trùng</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> An toàn sinh học</li>
+                            <li><i class="fas fa-check"></i> Thân thiện môi trường</li>
+                            <li><i class="fas fa-check"></i> Hiệu quả cao</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <h3>Thức ăn bổ sung</h3>
+                        <p>Trong thức ăn chăn nuôi & thủy sản</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Dinh dưỡng toàn diện</li>
+                            <li><i class="fas fa-check"></i> Tăng trưởng tối ưu</li>
+                            <li><i class="fas fa-check"></i> Nâng cao sức đề kháng</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <!-- Organizational Structure Section -->
+    <div class="organization-section">
+        <div class="container">
+            <div class="section-title">
+                <h6>| Cơ Cấu Tổ Chức</h6>
+                <h2>QUY MÔ TỔ CHỨC</h2>
+                <p>Công ty hiện tại gồm 100 nhân viên, với diện tích lên tới 10.000 m² với 12 phòng ban hiện đại, dây chuyền sản xuất tiên tiến.</p>
+            </div>
+            
+            <div class="organization-chart">
+                <img src="https://via.placeholder.com/1200x600/f8f5f0/1a1a1a?text=S%C6%A1+%C4%90%E1%BB%93+T%E1%BB%95+Ch%E1%BB%A9c+C%C3%B4ng+Ty" alt="Sơ đồ tổ chức Công ty Cổ phần Tập đoàn Đông Sơn Export" class="img-fluid">
+                <p class="chart-caption">Sơ đồ tổ chức Công ty Cổ phần Tập đoàn Đông Sơn Export</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Production Capacity Section -->
+    <div class="production-section">
+        <div class="container">
+            <div class="section-title">
+                <h6>| Năng Lực Sản Xuất</h6>
+                <h2>CÔNG NGHỆ & CHẤT LƯỢNG</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="advantage-box">
+                        <div class="advantage-header">
+                            <i class="fas fa-building"></i>
+                            <h3>Lợi thế về cơ sở vật chất</h3>
+                        </div>
+                        <p>Nhà máy 10.000m² (bao gồm nhà xưởng 2000m², hệ thống kho bãi 3000m²; và các hệ thống phụ trợ, khuôn viên…). Trang thiết bị máy móc hiện đại, quy trình vận hành dây chuyền sản phẩm tiên tiến đạt chuẩn GMP, công cụ dụng cụ đầy đủ để đảm bảo quá trình sản xuất tối ưu.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="advantage-box">
+                        <div class="advantage-header">
+                            <i class="fas fa-users-cog"></i>
+                            <h3>Lợi thế về con người</h3>
+                        </div>
+                        <p>Bộ máy nhân sự đầy đủ; cán bộ kỹ thuật có chuyên môn cao tốt nghiệp các khối ngành nông nghiệp, kỹ sư chăn nuôi, bác sỹ thú y, thủy sản, kinh tế, quản trị kinh doanh…, các tiến sĩ, thạc sĩ được đào tạo chuyên sâu; đội ngũ nhiều kinh nghiệm và nhiệt huyết phát triển công việc.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="advantage-box">
+                        <div class="advantage-header">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Lợi thế về tiến bộ khoa học kỹ thuật</h3>
+                        </div>
+                        <p>Liên kết dự án hợp tác với các trường đại học, học viện trung tâm nghiên cứu, các giáo sư đầu ngành trong phát triển sản phẩm, chuyển giao công nghệ hiện đại. Đội ngũ marketing bắt kịp xu hướng thị trường kinh doanh trong thời đại 4.0 – chuyển đổi số ngành chăn nuôi thú y và nông nghiệp công nghệ cao.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="advantage-box">
+                        <div class="advantage-header">
+                            <i class="fas fa-flask"></i>
+                            <h3>Lợi thế sản phẩm</h3>
+                        </div>
+                        <p>Hệ thống phòng thí nghiệm hiện đại, đội ngũ đảm bảo chất lượng, R&D có chuyên môn kinh nghiệm cao, liên tục nghiên cứu tập trung phát triển sản phẩm mới và nâng cao chất lượng sản phẩm. Sở hữu hơn 200 giấy chứng nhận đăng ký sản phẩm được cục thú y, chăn nuôi cấp phép.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-12 mb-4">
+                    <div class="advantage-box">
+                        <div class="advantage-header">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Lợi thế về kinh doanh, thị trường</h3>
+                        </div>
+                        <p>Phát triển kênh phân phối, bán hàng đa dạng. Bao gồm sản xuất gia công cho các công ty thương mại; đưa sản phẩm vào dự án nhà nước, đầu tư nước ngoài; hệ thống đại lý toàn quốc; các trang trại chăn nuôi công nghiệp và kênh bán lẻ trực tiếp đưa sản phẩm đến với người chăn nuôi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Laboratory Section -->
+    <div class="laboratory-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="lab-image">
+                        <img src="https://via.placeholder.com/600x400/1a1a1a/D1A53A?text=Ph%C3%B2ng+Th%C3%AD+Nghi%E1%BB%87m+Hi%E1%BB%87n+%C4%90%E1%BA%A1i" alt="Phòng thí nghiệm" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="section-title" style="text-align: left; margin-bottom: 30px;">
+                        <h6>| Cơ Sở Hiện Đại</h6>
+                        <h2>HỆ THỐNG PHÒNG THÍ NGHIỆM HIỆN ĐẠI</h2>
+                    </div>
+                    <p class="lab-description">
+                        Đội ngũ nhân sự phòng nghiên cứu và phát triển sản phẩm được trang bị đầy đủ các thiết bị hiện đại và kiến thức khoa học chuyên ngành được nâng cao đào tạo thường xuyên.
+                    </p>
+                    <p class="lab-description">
+                        <strong>Công ty Cổ phần Tập đoàn Đông Sơn Export</strong> với quy trình kiểm nghiệm sản phẩm nghiêm ngặt bởi các thiết bị phân tích chuyên sâu (hệ thống máy HPLC). Chúng tôi sở hữu hệ thống kho bãi quy mô trên 500m² với tiêu chuẩn nghiêm ngặt về nhiệt độ và độ ẩm theo tiêu chuẩn quốc tế.
+                    </p>
+                    <div class="lab-features">
+                        <div class="lab-feature-item">
+                            <i class="fas fa-microscope"></i>
+                            <span>Thiết bị phân tích HPLC</span>
+                        </div>
+                        <div class="lab-feature-item">
+                            <i class="fas fa-temperature-low"></i>
+                            <span>Kho bảo quản chuẩn quốc tế</span>
+                        </div>
+                        <div class="lab-feature-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Kiểm nghiệm nghiêm ngặt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research & Development Section -->
+    <div class="rnd-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 order-lg-2">
+                    <div class="rnd-image">
+                        <img src="https://via.placeholder.com/600x400/2d2d2d/D1A53A?text=Nghi%C3%AAn+C%E1%BB%A9u+Ph%C3%A1t+Tri%E1%BB%83n" alt="Nghiên cứu phát triển" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 order-lg-1">
+                    <div class="section-title" style="text-align: left; margin-bottom: 30px;">
+                        <h6>| Đổi Mới Sáng Tạo</h6>
+                        <h2>LUÔN NGHIÊN CỨU NHỮNG SẢN PHẨM MỚI</h2>
+                    </div>
+                    <p class="rnd-description">
+                        Đông Sơn Export không ngừng đầu tư vào nghiên cứu và phát triển, với mục tiêu mang đến những giải pháp tối ưu nhất cho ngành chăn nuôi Việt Nam.
+                    </p>
+                    <ul class="rnd-list">
+                        <li><i class="fas fa-check-circle"></i> Đổi mới sản phẩm liên tục</li>
+                        <li><i class="fas fa-check-circle"></i> Hợp tác với các viện nghiên cứu hàng đầu</li>
+                        <li><i class="fas fa-check-circle"></i> Ứng dụng công nghệ tiên tiến</li>
+                        <li><i class="fas fa-check-circle"></i> Phát triển bền vững</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Distribution Section -->
+    <div class="market-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="market-card">
+                        <div class="market-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>THỊ TRƯỜNG NỘI ĐỊA</h3>
+                        <div class="market-number">
+                            <span class="counter-value" data-target="200">200</span>+
+                        </div>
+                        <h4>Nhà phân phối độc quyền</h4>
+                        <p>Từ nhiều năm qua, chúng tôi đã có hơn 200 đại lý phân phối sản phẩm trải dài từ Bắc vào Nam. Chiến lược của chúng tôi trong tương lai không chỉ mở rộng sự đa dạng và chất lượng sản phẩm cho đại lý nội địa, mà còn hướng đến quy trình chăn nuôi khép kín ở các trang trại.</p>
+                        <div class="market-regions">
+                            <span class="region-tag"><i class="fas fa-map-marker-alt"></i> Miền Bắc</span>
+                            <span class="region-tag"><i class="fas fa-map-marker-alt"></i> Miền Trung</span>
+                            <span class="region-tag"><i class="fas fa-map-marker-alt"></i> Miền Nam</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-5">
+                    <div class="market-card export">
+                        <div class="market-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3>MỤC TIÊU XUẤT KHẨU</h3>
+                        <div class="market-number">
+                            <span class="counter-value" data-target="8">8</span>+
+                        </div>
+                        <h4>Năm kinh nghiệm</h4>
+                        <p>Hơn 8 năm kinh nghiệm trong lĩnh vực sản xuất và phân phối thuốc thú y, thủy sản. Cùng với công nghệ sản xuất sản phẩm ưu việt – hệ thống máy móc hiện đại – chú trọng nguồn nguyên liệu và đáp ứng tiêu chuẩn chất lượng thị trường.</p>
+                        <div class="export-goals">
+                            <div class="goal-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>Đáp ứng tiêu chuẩn quốc tế</span>
+                            </div>
+                            <div class="goal-item">
+                                <i class="fas fa-shipping-fast"></i>
+                                <span>Mở rộng thị trường xuất khẩu</span>
+                            </div>
+                            <div class="goal-item">
+                                <i class="fas fa-handshake"></i>
+                                <span>Hợp tác đối tác toàn cầu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Commitment Section -->
+    <div class="commitment-section">
+        <div class="container">
+            <div class="commitment-content">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4">
+                        <div class="commitment-image">
+                            <img src="https://via.placeholder.com/600x500/D1A53A/1a1a1a?text=Cam+K%E1%BA%BFt+Ch%E1%BA%A5t+L%C6%B0%E1%BB%A3ng" alt="Cam kết chất lượng" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="section-title" style="text-align: left; margin-bottom: 30px;">
+                            <h6>| Cam Kết Của Chúng Tôi</h6>
+                            <h2>ĐỊNH HƯỚNG PHÁT TRIỂN</h2>
+                        </div>
+                        <ul class="commitment-list">
+                            <li>
+                                <i class="fas fa-medal"></i>
+                                <div>
+                                    <h5>Đáp ứng sản lượng cao</h5>
+                                    <p>Đáp ứng chất lượng cao và chiếm lĩnh thị trường toàn quốc, hướng tới xuất khẩu quốc tế.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-dollar-sign"></i>
+                                <div>
+                                    <h5>Cạnh tranh giá cả</h5>
+                                    <p>Cạnh tranh giá cả thị trường, chất lượng sản phẩm tốt, giá tốt.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-hands-helping"></i>
+                                <div>
+                                    <h5>Nâng cao chất lượng dịch vụ</h5>
+                                    <p>Luôn nâng cao chất lượng dịch vụ, đồng hành và đưa đến giải pháp tối ưu, mang đến lợi ích cho chăn nuôi thú y và lợi ích xã hội.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h5>Phát triển đội ngũ</h5>
+                                    <p>Không ngừng tổ chức đào tạo, phát triển đội ngũ, nâng cao năng lực và chất lượng chuyên môn, tay nghề. Xây dựng môi trường làm việc năng động, nhiệt huyết.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Message Section -->
     <div class="message-section">
         <div class="container">
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-            <h6 style="color: rgba(255,255,255,0.9); font-size: 16px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;">| Thông Điệp Của Chúng Tôi</h6>
-            <h2>"Đông Sơn Export – Đồng hành kiến tạo nền nông nghiệp xanh, hiện đại và bền vững hướng đến tương lai."</h2>
-            <div class="main-button" style="margin-top: 40px;">
-                <a href="contact.html"><i class="fas fa-envelope"></i> Liên hệ với chúng tôi</a>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <h6 style="color: rgba(255,255,255,0.9); font-size: 16px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;">| Thông Điệp Của Chúng Tôi</h6>
+                    <h2>"Đông Sơn Export – Đồng hành kiến tạo nền chăn nuôi thú y và nông nghiệp xanh, hiện đại và bền vững hướng đến tương lai."</h2>
+                    <div class="main-button" style="margin-top: 40px;">
+                        <a href="contact.php"><i class="fas fa-envelope"></i> Liên hệ với chúng tôi</a>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </div>
     </div>
 
+    <!-- Counter Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Counter animation
+        const counters = document.querySelectorAll('.counter-value');
+        const speed = 200;
+        let animated = false;
+        
+        const animateCounters = () => {
+            if (animated) return;
+            animated = true;
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const increment = target / speed;
+                
+                const updateCount = () => {
+                    const count = +counter.innerText.replace(/,/g, '');
+                    
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment).toLocaleString();
+                        setTimeout(updateCount, 10);
+                    } else {
+                        counter.innerText = target.toLocaleString();
+                    }
+                };
+                
+                updateCount();
+            });
+        };
+        
+        // Intersection Observer for counter animation
+        const observerOptions = {
+            threshold: 0.5
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                }
+            });
+        }, observerOptions);
+        
+        const statsSection = document.querySelector('.company-stats-section');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+        
+        // Fade in animations on scroll
+        const fadeElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .slide-in-up');
+        
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0) translateX(0)';
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        fadeElements.forEach(element => {
+            fadeObserver.observe(element);
+        });
+    });
+    </script>
 
 <?php include 'includes/footer.php'; ?>
