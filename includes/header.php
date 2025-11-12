@@ -57,6 +57,45 @@ if (!isset($page)) {
     
     <?php if(isset($additional_css)) echo $additional_css; ?>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+    <!-- Google Translate -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'vi',
+                includedLanguages: 'en,ja,ko,th,vi',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+        
+        function changeLanguage(langCode) {
+            var select = document.querySelector('.goog-te-combo');
+            if (select) {
+                select.value = langCode;
+                select.dispatchEvent(new Event('change'));
+            }
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <style>
+        /* Ẩn Google Translate banner và widget mặc định */
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+        
+        body {
+            top: 0 !important;
+        }
+        
+        #google_translate_element {
+            display: none;
+        }
+        
+        .skiptranslate {
+            display: none !important;
+        }
+    </style>
 <!--
 
 TemplateMo 591 villa agency
@@ -67,6 +106,9 @@ https://templatemo.com/tm-591-villa-agency
   </head>
 
 <body>
+
+  <!-- Hidden Google Translate Element -->
+  <div id="google_translate_element"></div>
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -123,23 +165,23 @@ https://templatemo.com/tm-591-villa-agency
                             <i class="fa fa-chevron-down"></i>
                         </button>
                         <div class="lang-dropdown" id="langDropdown">
-                            <a href="#" class="lang-option active" data-lang="vi">
+                            <a href="#" class="lang-option active" data-lang="" onclick="changeLanguage(''); return false;">
                                 <img src="images/vietnam.png" alt="Tiếng Việt">
                                 <span>Tiếng Việt</span>
                             </a>
-                            <a href="#" class="lang-option" data-lang="en">
+                            <a href="#" class="lang-option" data-lang="en" onclick="changeLanguage('en'); return false;">
                                 <img src="images/united-states.png" alt="English">
                                 <span>English</span>
                             </a>
-                            <a href="#" class="lang-option" data-lang="jp">
+                            <a href="#" class="lang-option" data-lang="ja" onclick="changeLanguage('ja'); return false;">
                                 <img src="images/japan.png" alt="日本語">
                                 <span>日本語</span>
                             </a>
-                            <a href="#" class="lang-option" data-lang="kr">
+                            <a href="#" class="lang-option" data-lang="ko" onclick="changeLanguage('ko'); return false;">
                                 <img src="images/south-korea.png" alt="한국어">
                                 <span>한국어</span>
                             </a>
-                            <a href="#" class="lang-option" data-lang="th">
+                            <a href="#" class="lang-option" data-lang="th" onclick="changeLanguage('th'); return false;">
                                 <img src="images/thailand.png" alt="ไทย">
                                 <span>ไทย</span>
                             </a>
