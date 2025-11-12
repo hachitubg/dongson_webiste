@@ -1,0 +1,198 @@
+/* Contact Buttons - Left Side */
+.contact-buttons-left {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 998;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  opacity: 0.75;
+}
+
+.contact-btn i {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.contact-btn span {
+  opacity: 0;
+  max-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Hover Effects */
+.contact-btn:hover {
+  width: auto;
+  padding: 0 18px;
+  border-radius: 25px;
+  opacity: 1;
+  transform: translateX(3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-btn:hover span {
+  opacity: 1;
+  max-width: 100px;
+  margin-left: 8px;
+}
+
+.contact-btn:hover i {
+  transform: scale(1.1);
+}
+
+/* Zalo Button */
+.zalo-btn {
+  background: rgba(0, 104, 255, 0.7);
+}
+
+.zalo-btn:hover {
+  background: rgba(0, 104, 255, 0.9);
+}
+
+/* Facebook Button */
+.facebook-btn {
+  background: rgba(0, 132, 255, 0.7);
+}
+
+.facebook-btn:hover {
+  background: rgba(0, 132, 255, 0.9);
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  background: rgba(37, 211, 102, 0.7);
+}
+
+.whatsapp-btn:hover {
+  background: rgba(37, 211, 102, 0.9);
+}
+
+/* Subtle pulse animation - less intrusive */
+@keyframes subtlePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.contact-btn {
+  animation: subtlePulse 3s infinite ease-in-out;
+}
+
+.contact-btn:hover {
+  animation: none;
+}
+
+/* Slide in animation on page load */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 0.75;
+    transform: translateX(0);
+  }
+}
+
+.contact-buttons-left .contact-btn:nth-child(1) {
+  animation: slideInLeft 0.4s ease-out 0.3s both, subtlePulse 3s infinite ease-in-out 1s;
+}
+
+.contact-buttons-left .contact-btn:nth-child(2) {
+  animation: slideInLeft 0.4s ease-out 0.5s both, subtlePulse 3s infinite ease-in-out 1.5s;
+}
+
+.contact-buttons-left .contact-btn:nth-child(3) {
+  animation: slideInLeft 0.4s ease-out 0.7s both, subtlePulse 3s infinite ease-in-out 2s;
+}
+
+/* Custom Zalo Icon (FontAwesome doesn't have official Zalo) */
+.fa-zalo::before {
+  content: "Z";
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .contact-buttons-left {
+    left: 15px;
+    bottom: 15px;
+    gap: 10px;
+  }
+  
+  .contact-btn {
+    width: 46px;
+    height: 46px;
+    font-size: 22px;
+  }
+  
+  .contact-btn:hover {
+    width: 46px;
+    padding: 0;
+    transform: scale(1.08);
+    border-radius: 50%;
+  }
+  
+  .contact-btn:hover span {
+    opacity: 0;
+    max-width: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-buttons-left {
+    left: 10px;
+    bottom: 10px;
+    gap: 8px;
+  }
+  
+  .contact-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+}
+
+/* Ensure buttons don't overlap with back to top button */
+#backToTop {
+  right: 20px;
+  bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #backToTop {
+    right: 15px;
+    bottom: 15px;
+  }
+}

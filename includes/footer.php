@@ -89,6 +89,24 @@
     <i class="fa fa-arrow-up"></i>
   </a>
 
+  <!-- Contact Buttons - Left Side -->
+  <div class="contact-buttons-left">
+    <a href="https://zalo.me/0965032630" target="_blank" class="contact-btn zalo-btn" title="Liên hệ qua Zalo">
+      <i class="fab fa-zalo"></i>
+      <span>Zalo</span>
+    </a>
+    
+    <a href="https://www.facebook.com/profile.php?id=61554296833363" target="_blank" class="contact-btn facebook-btn" title="Liên hệ qua Facebook">
+      <i class="fab fa-facebook-messenger"></i>
+      <span>Messenger</span>
+    </a>
+    
+    <a href="https://wa.me/840965032630" target="_blank" class="contact-btn whatsapp-btn" title="Liên hệ qua WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
