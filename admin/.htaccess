@@ -1,0 +1,13 @@
+# Admin directory - Remove .php extension
+RewriteEngine On
+
+# Remove .php extension from URL (GET only, skip POST to preserve uploads)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
+
+# Redirect .php URLs to non-.php URLs (GET only, preserve POST for file uploads)
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/admin/([^.]+)\.php [NC]
+RewriteRule ^(.+)\.php$ /admin/$1 [R=301,L]
+
