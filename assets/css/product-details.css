@@ -22,7 +22,7 @@
 
 /* ==================== GALLERY SECTION ==================== */
 .product-gallery-section {
-  flex: 0 0 45%;
+  flex: 0 0 55%;
   position: sticky;
   top: 120px;
   align-self: flex-start;
@@ -47,7 +47,7 @@
 
 .main-product-image {
   width: 100%;
-  height: 500px;
+  height: 600px;
   object-fit: contain;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   border-radius: 15px;
@@ -130,7 +130,7 @@
 
 .thumbnail-item img {
   width: 100%;
-  height: 90px;
+  height: 110px;
   object-fit: contain;
   display: block;
   transition: all 0.3s;

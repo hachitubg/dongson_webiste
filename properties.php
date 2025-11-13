@@ -317,7 +317,7 @@ try {
       </script>
 
       <!-- Products Grid -->
-      <div class="row properties-box" style="height: auto !important;">
+      <div class="row properties-grid">
         <?php if (count($products) > 0): ?>
           <?php foreach ($products as $product): ?>
             <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items">
