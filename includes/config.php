@@ -4,8 +4,12 @@
 
 // Detect environment
 $isDocker = getenv('DOCKER_ENV') !== false || file_exists('/.dockerenv');
+$isProduction = !file_exists('C:/xampp') && !file_exists('/xampp') && !$isDocker;
 
-if ($isDocker) {
+if ($isProduction) {
+    // Production VPS environment
+    require_once __DIR__ . '/config.production.php';
+} elseif ($isDocker) {
     // Docker environment
     require_once __DIR__ . '/config.docker.php';
 } else {
