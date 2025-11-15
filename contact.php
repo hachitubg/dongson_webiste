@@ -29,7 +29,7 @@
             <div class="col-lg-12">
                 <div class="item phone">
                 <img src="assets/images/phone-icon.png" alt="" style="max-width: 52px;">
-                <h6>+84 912 345 678<br><span>Hotline</span></h6>
+                <h6>+8456 821 5678<br><span>Hotline</span></h6>
               </div>
             </div>
             <div class="col-lg-12">

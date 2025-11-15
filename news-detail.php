@@ -235,7 +235,7 @@ include 'includes/header.php';
                 <i class="fa fa-phone"></i>
                 <div>
                   <strong>Hotline</strong>
-                  <p>+84 965 032 630</p>
+                  <p>056 821 5678</p>
                 </div>
               </div>
               <div class="contact-item">

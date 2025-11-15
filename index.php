@@ -412,7 +412,7 @@ $posts = $postStmt->fetchAll();
             <div class="col-lg-6">
               <div class="item phone">
                 <img src="assets/images/phone-icon.png" alt="" style="max-width: 52px;">
-                <h6>Hotline: +84 912 345 678<br><span>Hỗ trợ khách hàng</span></h6>
+                <h6>Hotline: +8456 821 5678<br><span>Hỗ trợ khách hàng</span></h6>
               </div>
             </div>
             <div class="col-lg-6">

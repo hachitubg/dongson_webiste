@@ -211,7 +211,7 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-lg-8 col-md-8">
           <ul class="info">
             <li><i class="fa fa-envelope"></i> info@dongsonexport.com</li>
-            <li><i class="fa fa-phone"></i> +84 965 032 630</li>
+            <li><i class="fa fa-phone"></i> 056 821 5678</li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-4">

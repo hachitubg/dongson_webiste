@@ -8,7 +8,7 @@
             <p style="font-weight: 600; margin-bottom: 15px; text-align: unset !important">CÔNG TY CỔ PHẦN <br>ĐÔNG SƠN EXPORT</p>
             <ul class="contact-info">
               <li><i class="fa fa-map-marker-alt"></i> TT19-09, khu 31ha, Xã Gia Lâm, Thành phố Hà Nội</li>
-              <li><i class="fa fa-phone"></i> <a href="tel:19008935">1900 8935</a> - <a href="tel:0568215678">0568 215 678</a></li>
+              <li><i class="fa fa-phone"></i><a href="tel:0568215678">056 821 5678</a></li>
               <li><i class="fa fa-envelope"></i> <a href="mailto:info@dongsonexport.com">info@dongsonexport.com</a></li>
               <li><i class="fa fa-globe"></i> <a href="http://dongsonexport.com" target="_blank">dongsonexport.com</a></li>
             </ul>
@@ -30,7 +30,7 @@
             <p>Doanh nghiệp tiên phong trong lĩnh vực cung cấp sản phẩm – giải pháp phục vụ ngành nông nghiệp và chăn nuôi theo định hướng xanh – bền vững – chuẩn quốc tế.</p>
             <div class="footer-hotline">
               <h5><i class="fa fa-phone"></i> HOTLINE TƯ VẤN 24/7</h5>
-              <h2>1900 8935</h2>
+              <h2>056 821 5678</h2>
             </div>
           </div>
         </div>
