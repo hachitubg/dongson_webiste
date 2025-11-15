@@ -5,10 +5,10 @@
         <div class="col-lg-4 col-md-6">
           <div class="footer-widget">
             <h5>LIÊN HỆ</h5>
-            <p style="font-weight: 600; margin-bottom: 15px; text-align: unset !important">CÔNG TY CỔ PHẦN TẬP ĐOÀN<br>ĐÔNG SƠN EXPORT</p>
+            <p style="font-weight: 600; margin-bottom: 15px; text-align: unset !important">CÔNG TY CỔ PHẦN <br>ĐÔNG SƠN EXPORT</p>
             <ul class="contact-info">
-              <li><i class="fa fa-map-marker-alt"></i> Khánh Ninh, Ngọc Châu, Tân Yên, Bắc Giang</li>
-              <li><i class="fa fa-phone"></i> <a href="tel:19008935">1900 8935</a> - <a href="tel:0965032630">0965 032 630</a></li>
+              <li><i class="fa fa-map-marker-alt"></i> TT19-09, khu 31ha, Xã Gia Lâm, Thành phố Hà Nội</li>
+              <li><i class="fa fa-phone"></i> <a href="tel:19008935">1900 8935</a> - <a href="tel:0568215678">0568 215 678</a></li>
               <li><i class="fa fa-envelope"></i> <a href="mailto:info@dongsonexport.com">info@dongsonexport.com</a></li>
               <li><i class="fa fa-globe"></i> <a href="http://dongsonexport.com" target="_blank">dongsonexport.com</a></li>
             </ul>
@@ -65,17 +65,9 @@
       
       <div class="footer-bottom">
         <div class="row">
-          <div class="col-lg-6">
-            <p>© 2025 <strong>Đông Sơn Export JSC</strong>. All rights reserved.</p>
-          </div>
-          <div class="col-lg-6">
-            <p class="text-end">Designed with <i class="fa fa-heart"></i> by <a href="#">Đông Sơn Team</a></p>
-          </div>
-        </div>
-        <div class="row">
           <div class="col-lg-12">
             <p class="footer-cert">
-              <i class="fa fa-certificate"></i> Giấy chứng nhận đăng ký kinh doanh số: XXXXXXXXXX | Cấp ngày: XX/XX/XXXX<br>
+              <i class="fa fa-certificate"></i> Giấy chứng nhận đăng ký kinh doanh số: 0110269405 | Cấp ngày: 2023-03-01<br>
               <i class="fa fa-shield-alt"></i> Chứng nhận GMP-WHO | ISO 9001:2015 | HACCP
             </p>
           </div>
@@ -91,7 +83,7 @@
 
   <!-- Contact Buttons - Left Side -->
   <div class="contact-buttons-left">
-    <a href="https://zalo.me/0965032630" target="_blank" class="contact-btn zalo-btn" title="Liên hệ qua Zalo">
+    <a href="https://zalo.me/0568215678" target="_blank" class="contact-btn zalo-btn" title="Liên hệ qua Zalo">
       <i class="fab fa-zalo"></i>
       <span>Zalo</span>
     </a>
@@ -101,7 +93,7 @@
       <span>Messenger</span>
     </a>
     
-    <a href="https://wa.me/840965032630" target="_blank" class="contact-btn whatsapp-btn" title="Liên hệ qua WhatsApp">
+    <a href="https://wa.me/84568215678" target="_blank" class="contact-btn whatsapp-btn" title="Liên hệ qua WhatsApp">
       <i class="fab fa-whatsapp"></i>
       <span>WhatsApp</span>
     </a>

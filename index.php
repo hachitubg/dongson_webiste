@@ -4,6 +4,15 @@ $page_title = 'Đông Sơn Export - Xuất khẩu thuốc thú y & nông sản s
 include 'includes/header.php'; 
 include 'includes/db.php';
 
+// Get banners for homepage
+$bannerStmt = $pdo->prepare('
+  SELECT * FROM banners 
+  WHERE location_code = :location AND is_active = 1
+  ORDER BY sort_order ASC, created_at DESC
+');
+$bannerStmt->execute(['location' => 'trang_chu']);
+$banners = $bannerStmt->fetchAll();
+
 // Get 6 latest products
 $productStmt = $pdo->prepare('
   SELECT p.*, pi.image_path, c.name as category_name
@@ -33,24 +42,16 @@ $posts = $postStmt->fetchAll();
 
   <div class="main-banner">
     <div class="owl-carousel owl-banner">
-      <div class="item item-1">
-        <div class="header-text">
-          <span class="category">Đông Sơn <em>Export</em></span>
-          <h2>Xuất khẩu thuốc thú y và nông sản sạch</h2>
-        </div>
-      </div>
-      <div class="item item-2">
-        <div class="header-text">
-          <span class="category">Đông Sơn <em>Export</em></span>
-          <h2>Xuất khẩu Từ Việt Nam ra thế giới</h2>
-        </div>
-      </div>
-      <div class="item item-3">
-        <div class="header-text">
-          <span class="category">Đông Sơn <em>Export</em></span>
-          <h2>Kỷ nguyên vươn mình và phát triển</h2>
-        </div>
-      </div>
+      <?php if (!empty($banners)): ?>
+        <?php foreach ($banners as $banner): ?>
+          <img src="./<?php echo htmlspecialchars($banner['image_path']); ?>" alt="banner">
+        <?php endforeach; ?>
+      <?php else: ?>
+        <!-- Default banners if no banners in database -->
+        <div class="item item-1"></div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+      <?php endif; ?>
     </div>
   </div>
 
